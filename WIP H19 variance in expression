@@ -1,26 +1,11 @@
-#filter metadata to just Luminal Differentiated cells
-library(dplyr)
-WK_filter <- WK_Meta %>% select(X, Sample.. , Stage , cross , animal.ID , RIN, RNA.Qubit.concentration..ng.ul. , RIN.category) %>% filter(WK_Meta$Cell.type  == "Luminal Differentiated")
-
-print(WK_filter)
-
-#fitler grouped data to just Luminal differentiated
-WK_grouped_LD_filter <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped %>% select(X, Luminal.Differentiated.Gestation.d14.5, Luminal.Differentiated.Gestation.d5.5, Luminal.Differentiated.Gestation.d9.5, Luminal.Differentiated.Involution.d1, Luminal.Differentiated.Involution.d14, Luminal.Differentiated.Involution.d6, Luminal.Differentiated.Lactation.d10, Luminal.Differentiated.Lactation.d15, Luminal.Differentiated.Lactation.d5, Luminal.Differentiated.Nulliparous.d0)
-names(WK_grouped_LD_filter)[1] <- "gene"
-
-#h19 expression in differentiated luminal cells
-H19_grouped_LD_filter1 <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped %>% select(X, Luminal.Differentiated.Gestation.d14.5, Luminal.Differentiated.Gestation.d5.5, Luminal.Differentiated.Gestation.d9.5, Luminal.Differentiated.Involution.d1, Luminal.Differentiated.Involution.d14, Luminal.Differentiated.Involution.d6, Luminal.Differentiated.Lactation.d10, Luminal.Differentiated.Lactation.d15, Luminal.Differentiated.Lactation.d5, Luminal.Differentiated.Nulliparous.d0) %>% filter(MouseMammaryGland_Cleaned_edgeR_fpkm_grouped$X == "ENSMUSG00000000031")
-print(H19_grouped_LD_filter)
-H19_grouped_LD_filter2 <- t(H19_grouped_LD_filter1) 
-
 #H19 in all tissues ENSMUSG00000000031 - what other variants of H19 are there?
 H19_grouped_all <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped %>% filter(MouseMammaryGland_Cleaned_edgeR_fpkm_grouped$X == "ENSMUSG00000000031")
 H19_grouped_all2 <- t(H19_grouped_all)
 #same formatting issue as above - currently as 1 obs of 61 variables
- H19_grouped_all3 <- Untitled
+H19_grouped_all3 <- Untitled
 #is there significant variance in H19 expression across tissues? - what test here?
  
- H19_grouped_all3 <- Untitled
+H19_grouped_all3 <- Untitled
 y <- H19_grouped_all3$Exp
 var(y)
 par(mfrow=c(1,1))
@@ -30,6 +15,15 @@ hist(y, breaks=20, xlab="H19 FPKM", main="H19 FPKM")
 logY <- log(y) #logtransform
 hist(logY, breaks=20, xlab="log(H19 FPKM)", main="Log transformd H19 FPKM")
 boxplot(logY)
-#columns and rows flipped - need to reformat how they are labelled
-#compare values for each gene across the different sets of luminal data - statistical analysis
-#filter for highest differences
+
+par(mfrow=c(1,1))
+boxplot(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.6)
+H19$logFPKM = log(H19$Exp) #log transform expression
+#boxplot(logFPKM ~ Cell.type, data = H19, cex.axis=0.6)
+boxplot(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.6)
+
+#have a look at distribution - probably only wotht investigating if there is variants/polymodality
+library(DescTools)
+par(mfrow=c(1,2))
+PlotViolin(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.55,main="H19 expression by cell type")
+PlotViolin(logFPKM ~ Cell.type, data=H19, xlab="Cell type", ylab="log expression (FPKM)",main="H19 expression by cell type (log transformed)", cex.axis=0.55)
