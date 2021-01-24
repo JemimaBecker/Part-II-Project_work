@@ -12,3 +12,15 @@ dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, tidy=TR
 #nrow(metaData) = 452 obs of 30 variables
 
 ##try again using unannotated data
+
+#try 2
+#needed the annotation in order to filter in the first place - delete columns added by ensembl
+ncExp_unannotated <- ncExp[,-c(454:461)]
+
+countData <- ncExp_unannotated
+metaData <- Meta_fixed
+
+dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, tidy=TRUE)
+
+#Error in DESeqDataSet(se, design = design, ignoreRank) : 
+#  some values in assay are not integers
