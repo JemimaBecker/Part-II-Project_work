@@ -1,0 +1,26 @@
+library("biomaRt")
+
+message("+-------------------------------------------------------------------------------")
+message("+ Use ensEMBL Annotations")
+message("+-------------------------------------------------------------------------------")
+
+ensembl    <- useEnsembl(biomart="ensembl", dataset="mmusculus_gene_ensembl")
+#listAttributes(ensembl)
+ensEMBL2id <- getBM(attributes=c('ensembl_gene_id', 'external_gene_name', 'description',
+                                 'chromosome_name', 'start_position', 'end_position', 
+                                 'strand', 'gene_biotype'), mart = ensembl)  
+rownames(ensEMBL2id) <- ensEMBL2id$ensembl_gene_id
+
+message("+-------------------------------------------------------------------------------")
+message("+ Merge Expression and ensEMBL Annotations")
+message("+-------------------------------------------------------------------------------")
+
+# This assumes your expression table has the ensEMBL IDs as rownames. The merge command will join the two tables by rownames
+
+FPKM_unG <- MouseMammaryGland_Cleaned_edgeR_fpkm[,-1]
+rownames(FPKM_unG) <- MouseMammaryGland_Cleaned_edgeR_fpkm[,1]
+annotatedExp_unG  <- merge(FPKM_unG, ensEMBL2id, by=0)
+
+FPKM_G <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped[,-1]
+rownames(FPKM_G) <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped[,1]
+annotatedExp_G  <- merge(FPKM_G, ensEMBL2id, by=0)
