@@ -1,0 +1,14 @@
+#try 1
+
+countData <- ncExp
+metaData <- Meta_fixed
+
+dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, tidy=TRUE)
+
+#Error in DESeqDataSetFromMatrix(countData = countData, colData = metaData,  : 
+#ncol(countData) == nrow(colData) is not TRUE
+
+#ncol(countData) = 461 variables 3072 obs
+#nrow(metaData) = 452 obs of 30 variables
+
+##try again using unannotated data
