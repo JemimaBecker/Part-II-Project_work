@@ -74,7 +74,7 @@ kruskal.test(exp ~ Dev.state, data=mirg.LP)
 
 #1 Nulliparous
 mirg.NP <- mirg %>% dplyr::filter(mirg$Dev.state == "Nulliparous")
-boxplot(exp ~ Cell.type, data=mirg.LP, main="Mirg exp Nulliparous")
+boxplot(exp ~ Cell.type, data=mirg.NP, main="Mirg exp Nulliparous")
 kruskal.test(exp ~ Cell.type, data=mirg.NP)
 #data:  exp by Cell.type
 #Kruskal-Wallis chi-squared = 5, df = 5, p-value = 0.4159
