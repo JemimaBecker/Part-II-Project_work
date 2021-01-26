@@ -75,3 +75,37 @@ H19_stromal <- filter(H19, Cell.type=="Stromal")
 boxplot(Exp ~ Dev.state, data=H19_stromal, cex.main=0.75, xlab="Developmental stage", ylab="expression (FPKM)", cex.axis=0.5,main="H19 expression by stage in stromal cells (KW p=0.07075)")
 kruskal.test(Exp ~ Dev.state, data=H19_stromal)
 #not significant p=0.07075
+
+
+
+#H19 at various time points
+
+par(mfrow=c(2,2))
+#1 Nulliparous
+H19.NP <- H19 %>% dplyr::filter(H19$Dev.state == "Nulliparous")
+boxplot(Exp ~ Cell.type, data=H19.NP, main="H19 exp Nulliparous, p-value = 0.4159")
+kruskal.test(Exp ~ Cell.type, data=H19.NP)
+#data:  Exp by Cell.type
+#Kruskal-Wallis chi-squared = 5, df = 5, p-value = 0.4159
+
+#2 Gestation
+H19.Gest <- H19 %>% dplyr::filter(H19$Dev.state == "Gestation")
+boxplot(Exp ~ Cell.type, data=H19.Gest, main="H19 exp Gestation, p-value = 0.0168")
+kruskal.test(Exp ~ Cell.type, data=H19.Gest)
+#data:  Exp by Cell.type
+#Kruskal-Wallis chi-squared = 13.819, df = 5, p-value = 0.0168
+
+#3 Lactation
+H19.Lact <- H19 %>% dplyr::filter(H19$Dev.state == "Lactation")
+boxplot(Exp ~ Cell.type, data=H19.Lact, main="H19 exp Lactation, p-value = 0.09022")
+kruskal.test(Exp ~ Cell.type, data=H19.Lact)
+#data:  Exp by Cell.type
+#Kruskal-Wallis chi-squared = 9.5146, df = 5, p-value = 0.09022
+
+#4 Involution
+H19.INV <- H19 %>% dplyr::filter(H19$Dev.state == "Involution")
+boxplot(Exp ~ Cell.type, data=H19.INV, main="H19 exp Involution, p-value = 0.03919")
+kruskal.test(Exp ~ Cell.type, data=H19.INV)
+#data:  Exp by Cell.type
+#Kruskal-Wallis chi-squared = 11.696, df = 5, p-value = 0.03919
+
