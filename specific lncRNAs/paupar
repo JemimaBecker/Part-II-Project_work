@@ -1,0 +1,22 @@
+#having a look at paupar because i know that its involved with brain development and interacts with kap1
+pauper_grouped_all <- ncExpG %>% dplyr::filter(ncExpG$ensgene == "ENSMUSG00000102424")
+pauper_grouped_all <- t(pauper_grouped_all)
+
+PlotViolin(Exp ~ Cell.type, data=paupar_sorted, main="paupar by cell type")
+PlotViolin(Exp ~ Dev.state, data=paupar_sorted, main="paupar by time point")
+print(kruskal.test(Exp ~ Cell.type, data=paupar_sorted))
+print(kruskal.test(Exp ~ Dev.state, data=paupar_sorted))
+
+
+print(aov(Exp ~ Cell.type, data=paupar_sorted))
+
+boxplot(Exp ~ Dev.state, data=paupar_sorted, main="paupar by time point")
+
+
+paupar.lm <- lm(Exp ~ Dev.state, data=paupar_sorted)
+anova(paupar.lm)
+par(mfrow=c(2,2))
+plot(paupar.lm)
+#lookig at plots, data does not appear to fit the assumtptions made by AOV
+
+#using KW teset this is non significant oops
