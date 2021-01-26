@@ -62,7 +62,7 @@ kruskal.test(Exp ~ Dev.state, data=H19_endo)
 H19_luminalD <- filter(H19, Cell.type=="Luminal.differentiated")
 boxplot(Exp ~ Dev.state, data=H19_luminalD, cex.main=0.75, xlab="Developmental stage", ylab="expression (FPKM)", cex.axis=0.5,main="H19 expression by stage in luminal differentiated cells (KW p=0.07075)")
 kruskal.test(Exp ~ Dev.state, data=H19_luminalD)
-# significant p=0.07075
+#not significant p=0.07075
 
 #5
 H19_luminalP <- filter(H19, Cell.type=="Luminal.progenitor")
@@ -74,4 +74,4 @@ kruskal.test(Exp ~ Dev.state, data=H19_luminalP)
 H19_stromal <- filter(H19, Cell.type=="Stromal")
 boxplot(Exp ~ Dev.state, data=H19_stromal, cex.main=0.75, xlab="Developmental stage", ylab="expression (FPKM)", cex.axis=0.5,main="H19 expression by stage in stromal cells (KW p=0.07075)")
 kruskal.test(Exp ~ Dev.state, data=H19_stromal)
-#significant p=0.07075
+#not significant p=0.07075
