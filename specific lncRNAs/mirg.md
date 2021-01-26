@@ -1,13 +1,16 @@
+# Examination of the imprinted miRNA containing gene Mirg
+## Initial data organisation
 mirg.dataG <- ncExpG %>% dplyr::filter(ncExpG$external_gene_name == "Mirg")
 mirg.dataG <- t(mirg.dataG)
 colnames(mirg.dataG) = mirg.dataG[1, ] 
 
+### ANOVA: Does the data fit the requirements and assumptions of this model?
 boxplot(exp ~ Cell.type, data=mirg)
 mirg.lm <- lm(exp ~ Cell.type, data=mirg)
 anova(mirg.lm)
 par(mfrow=c(2,2))
 plot(mirg.lm)
-#data doesnt seem to fit A anova riteria very well, but IS significant
+data doesnt seem to fit the anova criteria very well - normal QQ plot is particularly bad
 
 kruskal.test(exp ~ Cell.type, data=mirg)
 #significant variance in mirg expression between cell types
