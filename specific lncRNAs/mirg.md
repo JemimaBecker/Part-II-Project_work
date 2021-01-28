@@ -103,3 +103,4 @@ Kruskal-Wallis chi-squared = 6.7007, df = 5, p-value = 0.2439
 data:  exp by Cell.type
 Kruskal-Wallis chi-squared = 7.6385, df = 5, p-value = 0.1773
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.52.55.png)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Screenshot%202021-01-28%20at%2014.58.56.png)
