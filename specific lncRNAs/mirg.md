@@ -11,15 +11,15 @@
 > par(mfrow=c(2,2))
 > plot(mirg.lm)
 data doesnt seem to fit the anova criteria very well - normal QQ plot is particularly bad
-
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.51.33.png)
 > kruskal.test(exp ~ Cell.type, data=mirg)
 significant variance in mirg expression between cell types
-
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.51.03.png)
 > kruskal.test(exp ~ Dev.state, data=mirg)
 not significant variant in exp by developmental state, but will look at individual cell types
 > par(mfrow=c(1,1))
 > PlotViolin(exp ~ Cell.type, data=mirg)
-
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.51.53.png)
 # mirg in various cell types:
 
 ## 1: stroma
@@ -72,7 +72,7 @@ Kruskal-Wallis chi-squared = 5.1455, df = 3, p-value = 0.1615
 > kruskal.test(exp ~ Dev.state, data=mirg.LP)
 data:  exp by Dev.state
 Kruskal-Wallis chi-squared = 0.40244, df = 3, p-value = 0.9397
-
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.52.21.png)
 # Mirg at various time points
 
 ## 1 Nulliparous
@@ -102,3 +102,4 @@ Kruskal-Wallis chi-squared = 6.7007, df = 5, p-value = 0.2439
 > kruskal.test(exp ~ Cell.type, data=mirg.INV)
 data:  exp by Cell.type
 Kruskal-Wallis chi-squared = 7.6385, df = 5, p-value = 0.1773
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.52.55.png)
