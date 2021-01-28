@@ -22,10 +22,10 @@ start organising grouped data
        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage)) +
   geom_point())
 
-![] (https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.39.44.png)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.39.44.png)
 ## SPLIT INTO SEPARATE PLOTS FOR STAGE
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000000001" & Cell.type=="Endothelial"), 
        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage)) +
   geom_point() +
   facet_wrap(~ Stage)
-![] (https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.39.53.png)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-28%20at%2014.39.53.png)
