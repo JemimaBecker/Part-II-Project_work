@@ -1,26 +1,22 @@
-#try 1
+> install.packages("htmltools")
+> library(htmltools)
+> #source("https://bioconductor.org/biocLite.R")
+> biocLite("DESeq2")
 
-countData <- ncExp
-metaData <- Meta_fixed
-
-dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, tidy=TRUE)
-
-#Error in DESeqDataSetFromMatrix(countData = countData, colData = metaData,  : 
-#ncol(countData) == nrow(colData) is not TRUE
-
-#ncol(countData) = 461 variables 3072 obs
-#nrow(metaData) = 452 obs of 30 variables
-
-##try again using unannotated data
-
-#try 2
-#needed the annotation in order to filter in the first place - delete columns added by ensembl
-ncExp_unannotated <- ncExp[,-c(454:461)]
-
-countData <- ncExp_unannotated
-metaData <- Meta_fixed
-
-dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, tidy=TRUE)
-
-#Error in DESeqDataSet(se, design = design, ignoreRank) : 
-#  some values in assay are not integers
+> library( "DESeq2" )
+> library(ggplot2)
+> library("BiocParallel")
+> register(MulticoreParam(4))
+> countData <- MouseMammaryGland_Cleaned_rawCounts
+> head(countData)
+> metaData <- MouseMammaryGland_Cleaned_MetaData
+> dds <- DESeqDataSetFromMatrix(countData=countData, 
+                              colData=metaData, 
+                              design=~Stage, tidy = TRUE)
+> dds <- DESeq(dds)
+> ?DESeq
+> res <- results(dds)
+> head(results(dds, tidy=TRUE))
+> summary(res)
+> res <- res[order(res$padj),]
+> head(res)
