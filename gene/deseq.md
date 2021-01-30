@@ -31,8 +31,8 @@
 > head(resSig[order(resSig$log2FoldChange),])
 
 # Plotting and visualisation
-> plotCounts(dds, gene ="ENSMUSG00000000031", intgroup = "Stage")
-
+plotCounts(dds, gene ="ENSMUSG00000000031", intgroup = "Stage",main="H19 by stage")
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-30%20at%2015.08.06.png)
 > with(res, plot(log2FoldChange, -log10(pvalue), pch=20, main="volcano plot", xlim=c(-3,3)))
 > with(subset(res,padj<0.1), points(log2FoldChange, -log10(pvalue),pch=20, col="blue"))
 > with(subset(res, padj<0.1 & abs(log2FoldChange)>2), points(log2FoldChange, -log10(pvalue), pch=20, col="red"))
