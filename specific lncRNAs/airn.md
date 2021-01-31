@@ -32,7 +32,7 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
-
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-31%20at%2016.54.54.png)
 3: Basal
 
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Basal"), 
