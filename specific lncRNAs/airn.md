@@ -24,21 +24,29 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 2: Adipocyte
+
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Adipocytes"), 
 >        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage, group = 2)) +
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 3: Basal
+
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Basal"), 
 >        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage, group = 2)) +
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 4: Luminal differentiated
+
 5: Luminal Progenitor
+
 6: Stromal
+
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Stromal"), 
 >        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage, group = 2)) +
 >   geom_point() +
