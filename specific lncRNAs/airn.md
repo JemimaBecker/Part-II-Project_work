@@ -18,13 +18,17 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 
 # airn
 ## plot by time in four different stages for specific cell type
+
 1: Endothelial
+
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Endothelial"), 
 >        aes(x=factor(Age,levels=c("d0","d1","d5","d6","d9","d10","d14","d15")), y=value, colour=Stage, group = 2)) +
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-31%20at%2016.53.18.png)
+
 2: Adipocyte
 
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Adipocytes"), 
@@ -32,7 +36,9 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-31%20at%2016.54.54.png)
+
 3: Basal
 
 > ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Basal"), 
@@ -40,7 +46,9 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-31%20at%2016.57.03.png)
+
 4: Luminal differentiated
 
 5: Luminal Progenitor
@@ -52,4 +60,5 @@ df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-01-31%20at%2016.58.25.png)
