@@ -39,6 +39,8 @@ should be sorted now
 >   theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Endothelial cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/endothelial%20airn.png)
+
 2: Adipocyte
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Adipocytes"), 
@@ -48,6 +50,8 @@ should be sorted now
 >   facet_wrap(~ Stage) +
 >   theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Adipoctye cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/adipocyte%20airn.png)
 
 3: Basal
 
@@ -59,6 +63,8 @@ should be sorted now
 >   theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Basal cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/basal%20airn.png)
+
 4: Luminal differentiated
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Luminal_differentiated"), 
@@ -68,6 +74,8 @@ should be sorted now
 >   facet_wrap(~ Stage) +
 > theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Luminal differentiated cells cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/LD%20airn.png)
 
 5: Luminal Progenitor
 
@@ -79,6 +87,8 @@ should be sorted now
 >   theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Luminal progenitor cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/LP%20airn.png)
+
 6: Stromal
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Stromal"), 
@@ -89,3 +99,4 @@ should be sorted now
 >   theme(axis.text.y=element_blank()) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Stromal cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/stromal%20airn.png)
