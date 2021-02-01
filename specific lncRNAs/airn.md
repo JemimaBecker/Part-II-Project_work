@@ -41,13 +41,13 @@ should be sorted now
 
 2: Adipocyte
 
-> plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Endothelial"), 
+> plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Adipocytes"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), y=value, colour=Stage, group = 3)) +
 >   geom_point() +
 >   geom_line() +
 >   facet_wrap(~ Stage) +
 >   theme(axis.text.y=element_blank()) 
-> plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Endothelial cells") 
+> plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",ylab=NULL,subtitle = "Adipoctye cells") 
 
 3: Basal
 
