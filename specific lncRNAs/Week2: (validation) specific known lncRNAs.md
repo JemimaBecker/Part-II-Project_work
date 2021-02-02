@@ -33,6 +33,8 @@
 
 need to look now at significance of variation of expression
 
+> for all of these, need to think about what data to use, as well as statistical tests - most data doesn't seem to be normally distributed, but will need further analyses to determine this
+
 - [ ] Q1: is developmental stage a strong predictor of expression? (for each individual)
 
 - [ ]  Q2: is there signifiant varition within each stage (of expression per individual)
