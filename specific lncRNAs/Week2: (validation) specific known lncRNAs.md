@@ -33,10 +33,10 @@
 
 need to look now at significance of variation of expression
 
--[ ] Q1: is developmental stage a strong predictor of expression? (for each individual)
+- [ ] Q1: is developmental stage a strong predictor of expression? (for each individual)
 
--[ ]  Q2: is there signifiant varition within each stage (of expression per individual)
+- [ ]  Q2: is there signifiant varition within each stage (of expression per individual)
 
 i.e is age (d) a significant predictor of expression within each stage?
 
--[ ] Q3: is there coordinate regulation of genes within 1Mb in cis from any of these that show significant differences in stage-specific expression?
+- [ ] Q3: is there coordinate regulation of genes within 1Mb in cis from any of these that show significant differences in stage-specific expression?
