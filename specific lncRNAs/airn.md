@@ -33,6 +33,8 @@ dataframe prep
 >   facet_wrap(~ Stage) 
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/airn%20ld.png)
+
 ## Luminal Progenitor
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000078247" & Cell.type=="Luminal_progenitors"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), y=value, colour=Stage, group = 3)) +
@@ -41,3 +43,5 @@ dataframe prep
 >   facet_wrap(~ Stage) +
 >   scale_y_continuous(breaks=c(0,1,2,3,4,5,6,7))
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Airn expression",subtitle = "Luminal progenitor cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/airn%20lp.png)
