@@ -31,6 +31,8 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="End
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Endothelial cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20endothelial.png)
+
 
 ## 2: Adipocyte
 plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Adipocytes"), 
@@ -41,6 +43,8 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Adi
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Adipocyte cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20adipocyte.png)
+
 ## 3: Basal
 plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Basal"), 
                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), y=value, colour=Stage, group = 3)) +
@@ -49,6 +53,8 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Bas
   facet_wrap(~ Stage) +
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Basal cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20basal.png)
 
 ## 4: Luminal differentiated
 plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Luminal_differentiated"), 
@@ -59,6 +65,8 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Lum
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20luminal%20differentiated.png)
+
 ## 5: Luminal Progenitor
 plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Luminal_progenitors"), 
                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), y=value, colour=Stage, group = 3)) +
@@ -68,6 +76,8 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Lum
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Luminal progenitor cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20luminal%20progenitors.png)
+
 ## 6: Stromal
 plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Stromal"), 
                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), y=value, colour=Stage, group = 3)) +
@@ -76,3 +86,5 @@ plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000101609" & Cell.type=="Str
   facet_wrap(~ Stage) +
   theme(axis.text.y=element_blank()) 
 plot + labs(x = "Age", y= "Expression (FPKM)", title="Kcnq10t1 expression",ylab=NULL,subtitle = "Stromal cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Kcnq10t1%20stromal.png)
