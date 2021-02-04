@@ -79,6 +79,8 @@ filtering lowly expressed genes
 > keep <- rowSums(thresh) > 2
 > plot(myCPM[,1],countdata[,1])
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-04%20at%2021.39.11.png)
+
 ### multidimensional scaling plots
 
 > plotMDS(y)
@@ -89,3 +91,5 @@ filtering lowly expressed genes
 > plotMDS(y,dim=c(3,4),col=col.cell,pch=16)
 > legend("topleft",fill=c("purple","orange", "red", "blue", "yellow", "green","pink"),legend=levels(sampleinfo$Cell.type))
 > title("Cell type")
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-04%20at%2021.38.57.png)
