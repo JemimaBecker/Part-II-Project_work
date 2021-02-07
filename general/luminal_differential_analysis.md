@@ -63,7 +63,7 @@ filter to cell types of interest
 > group <- factor(grou> p)
 > y$samples$group <- g> rou> > > p
 
-## 2: Hierarchical clustering>>  
+## 2: Hierarchical clustering
 
 > var_genes <- apply(logcounts,1,var)
 > head(var_genes)
