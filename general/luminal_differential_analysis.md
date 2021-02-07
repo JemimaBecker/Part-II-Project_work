@@ -97,3 +97,5 @@ had an error trying to run col.cell - will try again at some point
 > heatmap.2(highly_variable_lcpm,col=rev(morecols(50)),trace="none",main="Top 100 most variable genes across Luminal samples",
 >           scale="row",cex.lab=0.6)
 > legend(inset=c(-0.2,0),cex=0.5,"bottomleft",fill=c("purple","pink","orange","red","blue","green","yellow"),legend=levels(sampleinfo$Cell.type))
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.56.05.png)
