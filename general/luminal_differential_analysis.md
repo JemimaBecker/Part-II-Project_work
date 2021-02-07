@@ -83,6 +83,10 @@ annotate this list
 > rownames(selectvar_luminal) <- selectvar_luminal[,1]
 > selectvar_luminal_annotated  <- merge(selectvar_luminal, ensEMBL2id, by=0)
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.58.13.png)
+
+a problem here: some of the gene biotypes can apply to both noncoding and protien coding RNAs, so by filtering by biotype I have to choose between including ALL ncRNAs (and including a few protein coding genes) or only including ncRNAs and missing a few of them. >:( shit 
+
 > highly_variable_lcpm <- logcounts[select_var,]
 > dim(highly_variable_lcpm)
 
