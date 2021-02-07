@@ -103,3 +103,12 @@ had an error trying to run col.cell - will try again at some point
 > legend(inset=c(-0.2,0),cex=0.5,"bottomleft",fill=c("purple","pink","orange","red","blue","green","yellow"),legend=levels(sampleinfo$Cell.type))
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.56.05.png)
+
+## 3: MDS plotting and generation of interactive MDS plot
+
+> highly_variable_lcpm <- logcounts[select_var,]
+dim(highly_variable_lcpm)
+
+link to interactive plot:
+
+> http://jeremy-bio.gen.private.cam.ac.uk:8787/files/mds_luminal/MDS-Plot.html
