@@ -4,7 +4,6 @@
 > source("http://bioconductor.org/biocLite.R")
 > biocLite("edgeR")
 > library("biomaRt")
-
 > ensembl    <- useEnsembl(biomart="ensembl", dataset="mmusculus_gene_ensembl")
 > ensEMBL2id <- getBM(attributes=c('ensembl_gene_id', 'external_gene_name', 'description',
 >                                  'chromosome_name', 'start_position', 'end_position', 
@@ -25,7 +24,6 @@ filter to biotypes of interest
 >                                                    gene_biotype == "macro_lncRNA" |
 >                                                    gene_biotype ==  "processed_transcript")
 > 
-
 > raw_noncoding <- raw_noncoding[,c(1:453)] 
 
 filter to cell type of interest
@@ -41,15 +39,12 @@ load data
 
 > sampleinfo_luminal <- read.csv("~/Desktop/rstudio-export/sampleinfo_luminal.csv")
 > rawnoncoding2 <- read.csv("~/Desktop/rstudio-export/rawnoncoding2.csv")
-
 > library(DESeq2)
 > library(ggplot2)
-
 > metaData <- sampleinfo_luminal
 > countData <- rawnoncoding2
 > countData <- countData[,-c(1)]
 > metaData <- metaData[,-c(1)]
-
 > dds <- DESeqDataSetFromMatrix(countData = countData, 
 >                               colData = metaData,
 >                               design=~Stage, tidy=TRUE)
@@ -91,26 +86,20 @@ low counts [2]     : 2937, 56%
 
 
 return the names of the differentially expressed genes
-
-> different_b <- subset(res,padj<0.1)
-> different_blue <- as.data.frame(rownames(different_b))
-> padj <- as.data.frame(different_b$padj)
-> different_blue <- cbind(different_blue,padj)
-
-> different_r <- subset(res,padj<0.1 & abs(log2FoldChange)>2)
-> different_red <- as.data.frame(rownames(different_r))
-> padjR <- as.data.frame(different_r$padj)
-> different_red <- cbind(different_red,padjR)
-
+> different_blue <- subset(resdf,padj<0.1)
+> different_red <- subset(resdf,padj<0.1 & abs(log2FoldChange)>2)
 > write.csv(different_blue,file="different_blue.csv")
 > write.csv(different_red, file="different_red.csv")
 
 annotate differential expression files
 
-> rownames(different_blue) <-different_blue[,2]
+> rownames(different_blue) <-different_blue[,1]
 > annotated_blue  <- merge(different_blue, ensEMBL2id, by=0)
-> rownames(different_red) <-different_red[,2]
+> rownames(different_red) <-different_red[,1]
 > annotated_red  <- merge(different_red, ensEMBL2id, by=0)
+> annotated_blue <- annotated_blue[,c(10,1:9,11:16)]
+> annotated_blue <- annotated_blue[,-c(2:3)]
+> annotated_red <- annotated_red[,c(10,1:9,11:16)]
+> annotated_red <- annotated_red[,-c(2:3)]
 > write.csv(annotated_blue,file="annotated_blue.csv")
 > write.csv(annotated_red,file="annotated_red.csv")
-> annotated_blue  <- merge(different_blue, ensEMBL2id, by=0)
