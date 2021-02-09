@@ -18,8 +18,8 @@ data: RNAseq, four developmental stages, six cell types, four reciprocal crosses
 - [x] Start GitHub lab book - upload code and plot along with project description / aims etc
 
 ### Week 2
-- [ ] Look at stage specific differential expression for known lncRNAs (e.g. H19, Airn, Gtl2, Nespas, Snhg14 & Kcnq1ot1)
-- [ ] Look for other lncRNAs in a data driven way with significant expression differences
+- [x] Look at stage specific differential expression for known lncRNAs (e.g. H19, Airn, Gtl2, Nespas, Snhg14 & Kcnq1ot1)
+- [x] Look for other lncRNAs in a data driven way with significant expression differences
 - [ ] Identify, per lncRNA, differentially expressed protein-coding genes within e.g. 1Mb up/downstream
 
 narrow down field of study by focussing on luminal differentiated and progenitor cells only
