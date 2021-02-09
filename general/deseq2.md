@@ -60,13 +60,21 @@ load data
 > summary(res)
 
 out of 5231 with nonzero total read count
+
 adjusted p-value < 0.1
+
 LFC > 0 (up)       : 163, 3.1%
+
 LFC < 0 (down)     : 244, 4.7%
+
 outliers [1]       : 0, 0%
+
 low counts [2]     : 2937, 56%
+
 (mean count < 1)
+
 [1] see 'cooksCutoff' argument of ?results
+
 [2] see 'independentFiltering' argument of ?results
 
 > res <- res[order(res$padj),]
