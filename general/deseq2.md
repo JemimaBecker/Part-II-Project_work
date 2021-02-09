@@ -87,7 +87,8 @@ low counts [2]     : 2937, 56%
 > with(subset(res,padj<0.1),points(log2FoldChange, -log10(pvalue),pch=20, col="blue"))
 > with(subset(res,padj<0.1 & abs(log2FoldChange)>2),points(log2FoldChange, -log10(pvalue),pch=20,col="red"))
 
-> library(dplyr)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/volcano_plot.png)
+
 
 return the names of the differentially expressed genes
 
