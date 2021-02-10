@@ -1,5 +1,6 @@
 # create manhattan plot function
-# https://genome.sph.umich.edu/wiki/Code_Sample:_Generating_Manhattan_Plots_in_R
+### https://genome.sph.umich.edu/wiki/Code_Sample:_Generating_Manhattan_Plots_in_R
+
 library(lattice)
 manhattan.plot<-function(chr, pos, pvalue, 
                          sig.level=NA, annotate=NULL, ann.default=list(),
