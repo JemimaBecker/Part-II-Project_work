@@ -42,6 +42,8 @@ Reformat FPKM data
 >    facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm17509 expression (ENSMUSG00000091423)",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)
+
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085649" & Cell.type=="Luminal_differentiated"), 
@@ -51,6 +53,8 @@ Reformat FPKM data
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="A730032A03Rik expression (ENSMUSG00000085649)",subtitle = "Luminal differentiated cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png)
 
 ### 3:ENSMUSG00000089961 Gm16567
 
@@ -62,6 +66,8 @@ Reformat FPKM data
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm16567 expression (ENSMUSG00000089961)",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png)
+
 ### 4:ENSMUSG00000100954 Gm10138
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000100954" & Cell.type=="Luminal_differentiated"), 
@@ -71,6 +77,8 @@ Reformat FPKM data
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm10138 expression (ENSMUSG00000100954)",subtitle = "Luminal differentiated cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10138.png)
 
 ### 5:ENSMUSG00000090208 Gm15851
 
@@ -82,6 +90,8 @@ Reformat FPKM data
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm15851 expression (ENSMUSG00000090208)",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851.png)
+
 ### 6:ENSMUSG00000087698 Gm13031
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000087698" & Cell.type=="Luminal_differentiated"), 
@@ -91,6 +101,8 @@ Reformat FPKM data
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm13031 expression (ENSMUSG00000087698)",subtitle = "Luminal differentiated cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm13031.png)
 
 ### 7:ENSMUSG00000086052 Gm11802
 
@@ -102,6 +114,8 @@ Reformat FPKM data
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11802 expression (ENSMUSG00000086052)",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png)
+
 ### 8:ENSMUSG00000092283 Gm20412
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000092283" & Cell.type=="Luminal_differentiated"), 
@@ -111,6 +125,8 @@ Reformat FPKM data
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm20412 expression (ENSMUSG00000092283)",subtitle = "Luminal differentiated cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm20412.png)
 
 ### 9:ENSMUSG00000097988 Gm10535
 
@@ -122,6 +138,8 @@ Reformat FPKM data
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm10535 expression (ENSMUSG00000097988)",subtitle = "Luminal differentiated cells") 
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10535.png)
+
 ### 10:ENSMUSG00000085083 Gm11615
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085083" & Cell.type=="Luminal_differentiated"), 
@@ -131,3 +149,5 @@ Reformat FPKM data
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11615 expression (ENSMUSG00000085083)",subtitle = "Luminal differentiated cells") 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png)
