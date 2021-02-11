@@ -2,6 +2,8 @@
 
 These are the 10 genes with the lowest adjusted p-values as returned by DESeq2 (top 10 from annotated_red.csv)
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2018.22.37.png)
+
 ## 1: Prepare data
 
 load libraries
