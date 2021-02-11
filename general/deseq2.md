@@ -103,3 +103,17 @@ annotate differential expression files
 > annotated_red <- annotated_red[,-c(2:3)]
 > write.csv(annotated_blue,file="annotated_blue.csv")
 > write.csv(annotated_red,file="annotated_red.csv")
+
+#### manhattan plot of differentially expressed genes using results from DESeq2
+
+see separate file for code on generation of manhattan plot function
+
+> resdf <- read.csv("/data/homes/jb2220/resdf.csv")
+> rownames(resdf) <- resdf[,1]
+> annotated_resdf  <- merge(resdf, ensEMBL2id, by=0)
+> annotated_resdf <- as.data.frame(annotated_resdf)
+> annotated_resdf2 <- na.omit(annotated_resdf) #remove the NAs
+> manhattan.plot(factor(annotated_resdf2$chromosome_name, levels=c(1:19, "X","Y")),main="Differential expression of noncoding RNAs in luminal differentiated > cells",
+>                annotated_resdf2$start_position,annotated_resdf2$pvalue,sig.level=5e-3)
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2010.17.25.png)
