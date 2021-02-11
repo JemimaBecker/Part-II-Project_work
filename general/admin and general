@@ -1,3 +1,0 @@
-
-ncExp <- annotatedExp_UnG %>% dplyr::filter(gene_biotype == "3prime_overlapping_ncRNA" | gene_biotype == "bidirectional_promoter_lncRNA" | gene_biotype == "lincRNA" | gene_biotype == "lncRNA" | gene_biotype == "macro_lncRNA")
-ncExpG <- annotatedExp_G %>% dplyr::filter(gene_biotype == "3prime_overlapping_ncRNA" | gene_biotype == "bidirectional_promoter_lncRNA" | gene_biotype == "lincRNA" | gene_biotype == "lncRNA" | gene_biotype == "macro_lncRNA")
