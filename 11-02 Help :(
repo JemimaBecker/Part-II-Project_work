@@ -1,0 +1,40 @@
+library("reshape")
+library("tidyr")
+library("dplyr")
+library("ggplot2")
+
+par(mfrow=c(2,2))
+df <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped
+df.m <- melt(df)
+df.m <- as.data.frame(lapply(df.m, function(df.m) gsub("Luminal.Differentiated", "Luminal_differentiated", df.m)))
+df.m <- as.data.frame(lapply(df.m, function(df.m) gsub("Luminal.Progenitors", "Luminal_progenitors", df.m)))
+
+df.m <- as.data.frame(lapply(df.m, function(df.m) gsub("d14.5", "d14_5", df.m)))
+df.m <- as.data.frame(lapply(df.m, function(df.m) gsub("d5.5", "d5_5", df.m)))
+df.m <- as.data.frame(lapply(df.m, function(df.m) gsub("d9.5", "d9_5", df.m)))
+
+df.m.split <- df.m %>% separate(variable, c("Cell.type", "Stage", "Age"), "\\.")
+
+df.m.split <- as.data.frame(lapply(df.m.split, function(df.m) gsub("d14_5", "d14.5", df.m)))
+df.m.split <- as.data.frame(lapply(df.m.split, function(df.m) gsub("d5_5", "d5.5", df.m)))
+df.m.split <- as.data.frame(lapply(df.m.split, function(df.m) gsub("d9_5", "d9.5", df.m)))
+
+df.m.split$value <- as.numeric(as.character(df.m.split$value))
+df.m.split$Stage_orderered <- factor(df.m.split$Stage, 
+                             levels=c('Nulliparous','Gestation','Lactation','Involution'))
+saveRDS(df.m.split, file = "df.m.split.rds")
+
+
+## 1:ENSMUSG00000091423
+plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000091423" & Cell.type=="Luminal_differentiated"), 
+                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
+                    y=value, colour=Stage_orderered, group = 3)) +
+   geom_point() +
+   geom_line() +
+   facet_wrap(~ Stage_ordered, ncol=2 )  
+plot + labs(x = "Age", y= "Expression (FPKM)", title="ENSMUSG00000091423 expression",subtitle = "Luminal differentiated cells") 
+### Error: At least one layer must contain all faceting variables: `Stage_ordered`.
+##* Plot is missing `Stage_ordered`
+##* Layer 1 is missing `Stage_ordered`
+##* Layer 2 is missing `Stage_ordered`
+##Run `rlang::last_error()` to see where the error occ
