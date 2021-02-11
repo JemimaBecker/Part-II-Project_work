@@ -84,6 +84,7 @@ low counts [2]     : 2937, 56%
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/volcano_plot.png)
 
+note that the names and informtation on the differentially expressed genes are saved as two separate files annotated_red.csv and annotated_blue.csv
 
 return the names of the differentially expressed genes
 > different_blue <- subset(resdf,padj<0.1)
