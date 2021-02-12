@@ -97,6 +97,10 @@ Antisense to C1s1 (ENSMUSG00000038521)
 
 ### 4:ENSMUSG00000100954 Gm10138
 
+Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.49.46.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000100954" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -105,7 +109,9 @@ Antisense to C1s1 (ENSMUSG00000038521)
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm10138 expression (ENSMUSG00000100954)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10138.png)
+|   |  |
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10138.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.51.46.png)
 
 ### 5:ENSMUSG00000090208 Gm15851
 
