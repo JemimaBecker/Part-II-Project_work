@@ -61,6 +61,10 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
+Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor - and shows similar expression patterns. 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.29.44.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085649" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -69,7 +73,9 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="A730032A03Rik expression (ENSMUSG00000085649)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png)
+|   |  |
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.34.32.png)|
 
 ### 3:ENSMUSG00000089961 Gm16567
 
@@ -81,7 +87,7 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm16567 expression (ENSMUSG00000089961)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png) | ![]()
 
 ### 4:ENSMUSG00000100954 Gm10138
 
