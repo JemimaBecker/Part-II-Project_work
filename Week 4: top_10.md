@@ -36,7 +36,11 @@ Reformat FPKM data
 
 ### 1:ENSMUSG00000091423 Gm17509
 
-This gene is located on chromosome 13 and is antisense to Embigin (ENSMUSG00000021728), a gene with known roles in developmental control and cell differentiation. 
+This gene is located on chromosome 13 and is antisense to Embigin (ENSMUSG00000021728), a gene with known roles in developmental control and cell differentiation.
+Embigin shows very similar patterns of expression, also its expression varies over a smaller order of magnitude. Futher investigation is needed to examine the causal/functional relationship here.
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.14.09.png)
+
 > http://www.informatics.jax.org/gxd/marker/MGI:95321?tab=stagegridtab#gxd=markerMgiId%3DMGI%3A95321%26theilerStage%3D%26assayType%3D%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab
 > https://www.ensembl.org/Mus_musculus/Gene/Summary?db=core;g=ENSMUSG00000021728;r=13:117218701-117221075;t=ENSMUST00000022242
 
@@ -48,7 +52,12 @@ This gene is located on chromosome 13 and is antisense to Embigin (ENSMUSG000000
 >    facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm17509 expression (ENSMUSG00000091423)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)
+
+|   |  |
+| ------------- | ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.22.58.png)|
+
+
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
