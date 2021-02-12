@@ -61,7 +61,7 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
-Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor - and shows similar expression patterns. 
+Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor. Weird patterns
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.29.44.png)
 
@@ -75,7 +75,7 @@ Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor - 
 
 |   |  |
 | ------------- | ------------- |
-|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.34.32.png)|
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Screenshot%202021-02-12%20at%2017.36.26.png)|
 
 ### 3:ENSMUSG00000089961 Gm16567
 
