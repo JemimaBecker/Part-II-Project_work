@@ -36,6 +36,10 @@ Reformat FPKM data
 
 ### 1:ENSMUSG00000091423 Gm17509
 
+This gene is located on chromosome 13 and is antisense to Embigin (ENSMUSG00000021728), a gene with known roles in developmental control and cell differentiation. 
+> http://www.informatics.jax.org/gxd/marker/MGI:95321?tab=stagegridtab#gxd=markerMgiId%3DMGI%3A95321%26theilerStage%3D%26assayType%3D%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab
+> https://www.ensembl.org/Mus_musculus/Gene/Summary?db=core;g=ENSMUSG00000021728;r=13:117218701-117221075;t=ENSMUST00000022242
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000091423" & Cell.type=="Luminal_differentiated"), 
 >                 aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                     y=value, colour=Stage_ordered, group = 3)) +
