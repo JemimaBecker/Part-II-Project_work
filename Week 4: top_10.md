@@ -79,6 +79,10 @@ Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor. W
 
 ### 3:ENSMUSG00000089961 Gm16567
 
+Antisense to C1s1 (ENSMUSG00000038521) 
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.39.41.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000089961" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -87,7 +91,9 @@ Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor. W
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm16567 expression (ENSMUSG00000089961)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png) | ![]()
+|   |  |
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.41.58.png)|
 
 ### 4:ENSMUSG00000100954 Gm10138
 
