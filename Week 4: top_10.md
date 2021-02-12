@@ -115,6 +115,8 @@ Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
 
 ### 5:ENSMUSG00000090208 Gm15851
 
+Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMUSG00000041577)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000090208" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
