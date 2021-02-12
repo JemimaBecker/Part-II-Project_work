@@ -55,7 +55,7 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 
 |   |  |
 | ------------- | ------------- |
-| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.22.58.png)|
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.27.43.png)|
 
 
 
