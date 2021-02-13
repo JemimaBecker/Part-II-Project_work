@@ -218,6 +218,17 @@ Lgr6 "Receptor for R-spondins that potentiates the canonical Wnt signaling pathw
 
 ### 10:ENSMUSG00000085083 Gm11615
 
+lots of protein coding genes in the near vicinity
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2013.02.31.png) 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2013.03.53.png)
+
+- Wnk4 ENSMUSG00000035112, Serine/threonine protein kinase,WNK4 plays a critical role in the regulation of various transporters and channels in the kidney (https://en.wikipedia.org/wiki/WNK4)
+- Coa3 ENSMUSG00000017188, Cytochrome c oxidase assembly factor 3
+- Cntd1 ENSMUSG00000078653, Cyclin N-terminal domain-containing protein 1
+- Vps25 ENSMUSG00000078656, Vacuolar protein-sorting-associated protein 25, Component of the ESCRT-II complex
+- Becn1 ENSMUSG00000035086, role in regulation of tumourigenesis and cell death
+- Ramp2 ENSMUSG00000001240, Receptor activity modifying protein 2, role in glycosylation and transportation of adrenomedullin receptor to the cell surface
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085083" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -226,4 +237,14 @@ Lgr6 "Receptor for R-spondins that potentiates the canonical Wnt signaling pathw
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11615 expression (ENSMUSG00000085083)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png)
+|   |  |
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.21.06.png) |
+
+
+
+|   |  | |
+| ------------- | ------------- | ------------- |
+
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.20.45.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.22.04.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.21.46.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.21.30.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.20.55.png) | |
