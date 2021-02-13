@@ -4,6 +4,8 @@ These are the 10 genes with the lowest adjusted p-values as returned by DESeq2 (
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2018.22.37.png)
 
+of these, 9/10 overlap with a CTCF binding site, and all 10 overlap a promoter flank or a promoter.
+
 ## 1: Prepare data
 
 load libraries
