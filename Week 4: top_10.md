@@ -117,6 +117,8 @@ Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
 
 Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMUSG00000041577)
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851%20location.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000090208" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -125,7 +127,9 @@ Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMU
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm15851 expression (ENSMUSG00000090208)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851.png)
+|   |  |   |
+| ------------- | ------------- | ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/optc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/prelp.png) |
 
 ### 6:ENSMUSG00000087698 Gm13031
 
