@@ -169,7 +169,7 @@ Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.n
 
 |   |  |
 | ------------- | ------------- |
-|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png) | ![https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.26.14.png]() |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.26.14.png) |
 
 ### 8:ENSMUSG00000092283 Gm20412
 
