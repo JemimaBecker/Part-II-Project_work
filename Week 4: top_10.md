@@ -151,6 +151,14 @@ Antisense to Padi2 (ENSMUSG00000028927, Protein-arginine deiminase type-2) and v
 
 ### 7:ENSMUSG00000086052 Gm11802
 
+Antisense to Tox (ENSMUSG00000041272, thymocyte selection-associated high mobility group box) 
+
+"TOX is also a member of a small subfamily of proteins (TOX2, TOX3, and TOX4) that share almost identical HMG-box sequences.[8] TOX3 has been identified as a breast cancer susceptibility locus." https://en.wikipedia.org/wiki/TOX
+
+Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2234360/
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.22.18.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000086052" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -159,7 +167,9 @@ Antisense to Padi2 (ENSMUSG00000028927, Protein-arginine deiminase type-2) and v
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11802 expression (ENSMUSG00000086052)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png)
+|   |  |
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png) | ![https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.26.14.png]() |
 
 ### 8:ENSMUSG00000092283 Gm20412
 
