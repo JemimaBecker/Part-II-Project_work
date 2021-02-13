@@ -173,6 +173,12 @@ Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.n
 
 ### 8:ENSMUSG00000092283 Gm20412
 
+within the intron of a Rprd1b (ENSMUSG00000027651)(as is another lncRNA: 2010009K17Rik/ENSMUSG00000100860) and antisense to Tgm2 (ENSMUSG00000037820)
+Rprd1b promotes cell proliferation and is upregulated in tumours
+upregulation of Tgm2 associated with cancer metastasis and lower survival rates, implicated also in breast cancer
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.32.27.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000092283" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -181,7 +187,10 @@ Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.n
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm20412 expression (ENSMUSG00000092283)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm20412.png)
+|   |  |
+| ------------- | ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm20412.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.43.48.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.44.31.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.45.05.png) |
 
 ### 9:ENSMUSG00000097988 Gm10535
 
