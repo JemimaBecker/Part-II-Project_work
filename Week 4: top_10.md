@@ -239,7 +239,7 @@ lots of protein coding genes in the near vicinity
 
 |   |  |
 | ------------- | ------------- |
-|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.21.06.png) |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.33.29.png) |
 
 
 
