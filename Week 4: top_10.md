@@ -133,6 +133,10 @@ Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMU
 
 ### 6:ENSMUSG00000087698 Gm13031
 
+Antisense to Padi2 (ENSMUSG00000028927, Protein-arginine deiminase type-2) and very close to Sdhb (ENSMUSG00000009863, succinate dehydrogenase complex subunit B)
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.12.50.png)
+
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000087698" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -141,7 +145,9 @@ Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMU
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm13031 expression (ENSMUSG00000087698)",subtitle = "Luminal differentiated cells") 
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm13031.png)
+|   |  |   |
+| ------------- | ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm13031.png)| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.17.38.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.18.15.png) |
 
 ### 7:ENSMUSG00000086052 Gm11802
 
