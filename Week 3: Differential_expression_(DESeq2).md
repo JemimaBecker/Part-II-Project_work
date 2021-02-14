@@ -105,6 +105,8 @@ annotate differential expression files
 > write.csv(annotated_blue,file="annotated_blue.csv")
 > write.csv(annotated_red,file="annotated_red.csv")
 
+the same has been done for all genes ie not just the noncoding ones), returning two files: different_blue_all.csv and different_red_all.csv, using the same limits as before.
+
 #### manhattan plot of differentially expressed genes using results from DESeq2
 
 see separate file for code on generation of manhattan plot function
