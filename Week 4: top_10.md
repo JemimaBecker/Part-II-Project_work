@@ -41,6 +41,8 @@ Reformat FPKM data
 This gene is located on chromosome 13 and is antisense to Embigin (ENSMUSG00000021728), a gene with known roles in developmental control and cell differentiation.
 Embigin shows very similar patterns of expression, also its expression varies over a smaller order of magnitude. Futher investigation is needed to examine the causal/functional relationship here.
 
+Embigin padj: 0.001311741, log2FoldChange: -3.861413 (red)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.14.09.png)
 
 > http://www.informatics.jax.org/gxd/marker/MGI:95321?tab=stagegridtab#gxd=markerMgiId%3DMGI%3A95321%26theilerStage%3D%26assayType%3D%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab
@@ -63,7 +65,7 @@ Embigin shows very similar patterns of expression, also its expression varies ov
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
-Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor. Weird patterns
+Antisense to Wfdc5 (ENSMUSG00000040154) - an extracellular protease inhibitor. Weird patterns, doesnt make it through to ither red or bue significance categories
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.29.44.png)
 
@@ -81,7 +83,7 @@ Antisense to Wfdc5 (ENSMUSG00000085649) - an extracellular protease inhibitor. W
 
 ### 3:ENSMUSG00000089961 Gm16567
 
-Antisense to C1s1 (ENSMUSG00000038521) 
+Antisense to C1s1 (ENSMUSG00000038521) doesnt make it through to either significance category
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.39.41.png)
 
@@ -101,6 +103,8 @@ Antisense to C1s1 (ENSMUSG00000038521)
 
 Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
 
+Ivns1abp padj: 0.002807668, log2FoldChange: -1.770356 (blue)
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.49.46.png)
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000100954" & Cell.type=="Luminal_differentiated"), 
@@ -117,7 +121,7 @@ Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
 
 ### 5:ENSMUSG00000090208 Gm15851
 
-Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMUSG00000041577)
+Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMUSG00000041577). Neither make it through to significance categories
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851%20location.png)
 
@@ -137,6 +141,10 @@ Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMU
 
 Antisense to Padi2 (ENSMUSG00000028927, Protein-arginine deiminase type-2) and very close to Sdhb (ENSMUSG00000009863, succinate dehydrogenase complex subunit B)
 
+Padi2: padj: 3.567672e-10, log2FoldChange: 3.935478 (red)
+
+Sdhb variance isnt significant.
+
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.12.50.png)
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000087698" & Cell.type=="Luminal_differentiated"), 
@@ -153,7 +161,7 @@ Antisense to Padi2 (ENSMUSG00000028927, Protein-arginine deiminase type-2) and v
 
 ### 7:ENSMUSG00000086052 Gm11802
 
-Antisense to Tox (ENSMUSG00000041272, thymocyte selection-associated high mobility group box) 
+Antisense to Tox (ENSMUSG00000041272, thymocyte selection-associated high mobility group box).  Not significant variance :(
 
 "TOX is also a member of a small subfamily of proteins (TOX2, TOX3, and TOX4) that share almost identical HMG-box sequences.[8] TOX3 has been identified as a breast cancer susceptibility locus." https://en.wikipedia.org/wiki/TOX
 
@@ -175,11 +183,11 @@ Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.n
 
 ### 8:ENSMUSG00000092283 Gm20412
 
-within the intron of a Rprd1b (ENSMUSG00000027651)(as is another lncRNA: 2010009K17Rik/ENSMUSG00000100860) and antisense to Tgm2 (ENSMUSG00000037820)
+within the intron of a Rprd1b (ENSMUSG00000027651)(as is another lncRNA: 2010009K17Rik/ENSMUSG00000100860, not significant change) and antisense to Tgm2 (ENSMUSG00000037820)
 
-Rprd1b promotes cell proliferation and is upregulated in tumours
+Rprd1b promotes cell proliferation and is upregulated in tumours. Padj= 1.914443e-11, log2FoldChange= 3.037133 (red)
 
-upregulation of Tgm2 associated with cancer metastasis and lower survival rates, implicated also in breast cancer
+upregulation of Tgm2 associated with cancer metastasis and lower survival rates, implicated also in breast cancer. Padj=5.14246 e-05, log2FoldChange= 2.990424 (red)
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.32.27.png)
 
@@ -198,7 +206,7 @@ upregulation of Tgm2 associated with cancer metastasis and lower survival rates,
 
 ### 9:ENSMUSG00000097988 Gm10535
 
-Antisense to Ptprv (ENSMUSG00000097993) and nearby to Lgr6 (ENSMUSG00000042793)
+Antisense to Ptprv (ENSMUSG00000097993, not significant) and nearby to Lgr6 (ENSMUSG00000042793, not significant)
 
 Ptprv May play a role in the maintenance of pluripotency. Down-regulated during differentiation. https://www.uniprot.org/uniprot/P70289
 
@@ -224,12 +232,12 @@ lots of protein coding genes in the near vicinity
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2013.02.31.png) 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2013.03.53.png)
 
-- Wnk4 ENSMUSG00000035112, Serine/threonine protein kinase,WNK4 plays a critical role in the regulation of various transporters and channels in the kidney (https://en.wikipedia.org/wiki/WNK4)
-- Coa3 ENSMUSG00000017188, Cytochrome c oxidase assembly factor 3
-- Cntd1 ENSMUSG00000078653, Cyclin N-terminal domain-containing protein 1
-- Vps25 ENSMUSG00000078656, Vacuolar protein-sorting-associated protein 25, Component of the ESCRT-II complex
-- Becn1 ENSMUSG00000035086, role in regulation of tumourigenesis and cell death
-- Ramp2 ENSMUSG00000001240, Receptor activity modifying protein 2, role in glycosylation and transportation of adrenomedullin receptor to the cell surface
+- Wnk4 ENSMUSG00000035112, padj=1.527823e-06, log2FoldChange= -2.512774 (red). Serine/threonine protein kinase,WNK4 plays a critical role in the regulation of various transporters and channels in the kidney (https://en.wikipedia.org/wiki/WNK4)
+- Coa3 ENSMUSG00000017188, padj= 0.02983283, log2FoldChange= -2.821824 (red). Cytochrome c oxidase assembly factor 3
+- Cntd1 ENSMUSG00000078653, padj= 0.005747596, log2FoldChange= -0.6838967 (bue). Cyclin N-terminal domain-containing protein 1
+- Vps25 ENSMUSG00000078656, not significant. Vacuolar protein-sorting-associated protein 25, Component of the ESCRT-II complex
+- Becn1 ENSMUSG00000035086, padj= 8.836736e-06, log2FoldChange= -2.426348 (red). role in regulation of tumourigenesis and cell death
+- Ramp2 ENSMUSG00000001240, not significant. Receptor activity modifying protein 2, role in glycosylation and transportation of adrenomedullin receptor to the cell surface
 
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085083" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
