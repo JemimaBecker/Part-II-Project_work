@@ -12,6 +12,11 @@ I ran DESeq2 on the lncRNA genes in each cell type individually to examine:
 |Basal|40|
 |Endothelial|23|
 
+|||
+| ------------- | ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/luminal_differentiated_nc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/stromal_nc.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/adipocytes_nc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/luminal_progenitor_nc.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/basal_nc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/endothelial_nc.png) |
 
 By comparing the lists of differentially expressed lncRNAs (padj < 0.1, |log2FoldChange|>2) across cell types I obtained a list of 77 lncRNA genes that were significantly differentially expressed in two or more cell types
 A small number(11) were differentially expressed in three or more cell types
