@@ -38,7 +38,7 @@ A small number(11) were differentially expressed in three or more cell types
 | Gm10570	| 3| + | + |- | -| -|- |	
 | Gimap1os	| 3| + | + |- | -|- | -|	
 
-|	Cell type	|	Number of cell types	|15	external_gene_name	|14	ensembl_gene_id	|13	baseMean	|12	log2FoldChange	|11	lfcSE	|10	stat	|9	pvalue	|8	padj	|7	description	|6	chromosome_name	|5	start_position	|4	end_position	|3	strand	|2
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
 |	B	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	59.52842217	|	2.685963084	|	0.75757131	|	3.545492086	|	0.000391881	|	0.01782555	|	RIKEN cDNA 8030451A03 gene [Source:MGI Symbol;Acc:MGI:1915353]	|	4	|	63898091	|	64068161	|	1	|
 |	LD	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	51.86269352	|	-3.016348472	|	1.065416227	|	-2.83114561	|	0.00463816	|	0.040061746	|	RIKEN cDNA 8030451A03 gene [Source:MGI Symbol;Acc:MGI:1915353]	|	4	|	63898091	|	64068161	|	1	|
