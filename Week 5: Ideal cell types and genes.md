@@ -27,7 +27,7 @@ A small number(11) were differentially expressed in three or more cell types
 | Gene name  |Number of cell types | Luminal Differentiated | Luminal Progenitors | Stromal | Basal | Adipoctye | Endothelial |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Gm15527	| 4| +| + | + | + | -|- |	
-| Gm15629	| 4| + |- | + | + | -|- |	
+| Gm15629	| 4| + |- | + | + | +|- |	
 | Gm42697	| 4|  +| + |-  | + | -| + |	
 | Gm13031	| 3| + | + | + |- |- |- |	
 | Gm14091	| 3| + |- | + |- | -|  +|	
@@ -66,7 +66,7 @@ Behaviour of Gm15527 in different cell types
 Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues.
 Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Lcp1.png =200x300)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Gm15629.png)
 
 LncRNA has only been identified in two other Mus species
 BLAST ?? cant find in genbank for some reason
@@ -75,7 +75,7 @@ Behaviour of  in different cell types:
 | Cell type  | log2FoldChange| Adjusted P-value |
 | ------------- | ------------- |------------- |
 |Luminal Differentiated||
-|Luminal Progenitor|||
+|Adipocyte|||
 |Basal|||
 |Stromal|||
 
