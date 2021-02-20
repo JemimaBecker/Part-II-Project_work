@@ -61,12 +61,15 @@ Behaviour of Gm15527 in different cell types
 |Basal|-3.132655|0.01353451|
 |Stromal|-2.390908|0.02110665|
 
-### 2: Gm15629 ()
+### 2: Gm15629 (ENSMUSG00000090054)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues.
+Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
-Human Homolog/syntenic location: 
-BLAST 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Lcp1.png | 200x300)
+
+LncRNA has only been identified in two other Mus species
+BLAST ?? cant find in genbank for some reason
 Behaviour of  in different cell types:
 
 | Cell type  | log2FoldChange| Adjusted P-value |
