@@ -66,7 +66,7 @@ Behaviour of Gm15527 in different cell types
 Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues.
 Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Lcp1.png | 200x300)
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Lcp1.png =200x300)
 
 LncRNA has only been identified in two other Mus species
 BLAST ?? cant find in genbank for some reason
