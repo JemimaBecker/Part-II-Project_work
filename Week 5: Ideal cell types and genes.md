@@ -34,3 +34,24 @@ A small number(11) were differentially expressed in three or more cell types
 | 8030451A03Rik	| 3| + | + |- | + | |- |	
 | Gm10570	| 3| + | + |- | -| -|- |	
 | Gimap1os	| 3| + | + |- | -|- | -|	
+
+
+Time to look at the behaviour of each of these lncRNAs in their respective cell types 
+
+1: Gm15527 (ENSMUSG00000086946)
+Overlaps two CTCF bidning sites and multiple promoter regions
+Overlapping protein coding genes: Chn2 (Decreased expression associated with gliomas and breast tumors,  increased expression is associated with lymphomas)
+Human Homolog/syntenic location: CHN2, also overlaps with an antisense lncRNA
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Mouse_Chn2.png)
+BLAST shows that this sequence is conserved in rodents and bats
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-20%20at%2016.00.47.png)
+
+Behaviour of Gm15527 in different cell types
+
+| Cell type  | log2FoldChange| Adjusted P-value |
+| ------------- | ------------- |------------- |
+|Luminal Differentiated|-4.338756|0.01928673|
+|Luminal Progenitor|3.495095|0.01026015|
+|Basal|-3.132655|0.01353451|
+|Stromal|-2.390908|0.02110665|
+
