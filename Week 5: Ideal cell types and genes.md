@@ -27,7 +27,7 @@ A small number(11) were differentially expressed in three or more cell types
 | Gene name  |Number of cell types | Luminal Differentiated | Luminal Progenitors | Stromal | Basal | Adipoctye | Endothelial |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Gm15527	| 4| +| + | + | + | -|- |	
-| Gm15629	| 4| + |- | + | + | +|- |	
+| Gm15629	| 3| - |- | + | + | +|- |	
 | Gm42697	| 4|  +| + |-  | + | -| + |	
 | Gm13031	| 3| + | + | + |- |- |- |	
 | Gm14091	| 3| + |- | + |- | -|  +|	
@@ -72,14 +72,13 @@ LncRNA has only been identified in two other Mus species
 BLAST ?? cant find in genbank for some reason
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Adipocyte|||
-|Basal|||
-|Stromal|||
+| Cell type  | Base mean|  log2FoldChange| Adjusted P-value |
+| ------------- | ------------- |------------- |------------- |
+|Adipocyte|7.434597|3.080773|0.06185798|
+|Basal|256.9519|-3.383027|7.79981e-05|
+|Stromal|573.9708|-4.312986|5.328281e-06|
 
-### 3: Gm42697 ()
+### 3: Gm42697 (ENSMUSG00000106120)
 
 Overlapping protein coding genes:
 
@@ -90,11 +89,11 @@ Behaviour of  in different cell types:
 | Cell type  | log2FoldChange| Adjusted P-value |
 | ------------- | ------------- |------------- |
 |Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|Luminal Progenitor|80.49656||
+|Basal|116.9573|-17.21151|1.421981e-23|
+|Epithelial|50.47333|4.609328|0.01954949|
 
-### 4: Gm13031 ()
+### 4: Gm13031 (ENSMUSG00000087698)
 
 Overlapping protein coding genes:
 
