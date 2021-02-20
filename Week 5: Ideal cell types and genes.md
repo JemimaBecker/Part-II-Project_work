@@ -1,3 +1,18 @@
+I ran DESeq2 on the lncRNA genes in each cell type individually to examine:
+
+- How many genes were differentially expressed
+- What the distribution of expression looked like
+
+| Cell type  |Number of lncRNA genes with padj<0.1 and log2FoldChange > 2|
+| ------------- | ------------- |
+|Luminal Differentiated| 234 |
+|Stromal|132|
+|Adipocyte|66|
+|Luminal Progenitor|62|
+|Basal|40|
+|Endothelial|23|
+
+
 By comparing the lists of differentially expressed lncRNAs (padj < 0.1, |log2FoldChange|>2) across cell types I obtained a list of 77 lncRNA genes that were significantly differentially expressed in two or more cell types
 A small number(11) were differentially expressed in three or more cell types
 
