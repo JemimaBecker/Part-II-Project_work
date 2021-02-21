@@ -77,8 +77,10 @@ Behaviour of Gm15527 in different cell types
 
 ### 2: Gm15629 (ENSMUSG00000090054)
 
-Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues.
-
+Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues. Rubcnl also within 1mb (increased expression assocaited w/ cervical cancer, prognostic marker in endometrial cancer, strongly associated with gastric cancer https://www.proteinatlas.org/ENSG00000102445-RUBCNL/pathology)
+|		|		|	 	|
+|	 ------------- |		 ------------- |		 ------------- |	
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.02.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.29.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.44.png) |
 Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Gm15629.png)
