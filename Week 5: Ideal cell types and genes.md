@@ -27,7 +27,7 @@ A small number(11) were differentially expressed in three or more cell types
 | Gene name  |Number of cell types | Luminal Differentiated | Luminal Progenitors | Stromal | Basal | Adipoctye | Endothelial |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Gm15527	| 4| +| + | + | + | -|- |	
-| Gm15629	| 3| - |- | + | + | +|- |	
+| Gm15629	| 4| + |- | + | + | +|- |	
 | Gm42697	| 4|  +| + |-  | + | -| + |	
 | Gm13031	| 3| + | + | + |- |- |- |	
 | Gm14091	| 3| + |- | + |- | -|  +|	
