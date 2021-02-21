@@ -166,6 +166,11 @@ Human Homolog/syntenic location: Knstrn. but no antisense overlap lncRNA.
 |||
 |	 ------------- |		 ------------- |	
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.07.59.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.07.50.png)|
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.12.44.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.12.36.png)|
+
+looks almost like "opposite" expression patterns in stromal cells, but very similar patterns in luminal differentiated cells
+
+cool
 
 Behaviour in different cell types:
 
