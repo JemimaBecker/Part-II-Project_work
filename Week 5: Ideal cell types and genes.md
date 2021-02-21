@@ -145,6 +145,8 @@ Has four differentially expressed protein coding genes within 1mb
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.47.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.36.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.26.png) |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.17.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.07.png) | |
 
+Looking at the expression here its interesting that the lncRNA starts very high and then crashes down whereas the others have little increases
+
 Human Homolog/syntenic location: lncRNA conserved in mice. Protein coding gene conserved, but lncRNA not present
  
 Behaviour in different cell types:
@@ -157,10 +159,14 @@ Behaviour in different cell types:
 
 ### 5: Gm14091 (ENSMUSG00000086421)
 
-Overlapping protein coding genes: antisense to Knstrn ENSMUSG00000027331.
+Overlapping protein coding genes: antisense to Knstrn ENSMUSG00000027331, which is mutated in 19% of cuteneous squamous cell carcinomas (Lee CS et al, Nat Genet 2014).
 
 Human Homolog/syntenic location: Knstrn. but no antisense overlap lncRNA.
- 
+
+|||
+|	 ------------- |		 ------------- |	
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.07.59.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2019.07.50.png)|
+
 Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
