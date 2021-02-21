@@ -78,6 +78,9 @@ Behaviour of Gm15527 in different cell types
 ### 2: Gm15629 (ENSMUSG00000090054)
 
 Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues. Rubcnl also within 1mb (increased expression assocaited w/ cervical cancer, prognostic marker in endometrial cancer, strongly associated with gastric cancer https://www.proteinatlas.org/ENSG00000102445-RUBCNL/pathology)
+
+Behaviour in Luminal differentiated cells - appears to be a nice correlation for all three - same patterns but much hihger count in lncRNA. According to ENCODE lncRNAs are generally expressed at a very low level relative to protein coding genes so this is interesting.
+
 |		|		|	 	|
 |	 ------------- |		 ------------- |		 ------------- |	
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.02.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.29.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.44.png) |
@@ -90,7 +93,9 @@ LncRNA has only been identified in two other Mus species
 BLAST:
 - first exon sequence appears to be unique to mice
 - second exon in rodents generally
-- third exmon unique to mice
+- third exon unique to mice
+- BLAST of whole thing brings up Lcp1 as protein coding regions are conserved
+ 
 Behaviour of  in different cell types:
 
 
