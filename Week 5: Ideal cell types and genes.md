@@ -113,7 +113,13 @@ Also overawlpping Egf: predicted gene 42650 (ENSMUSG00000105596) and 	RIKEN cDNA
 
 Human Homolog/syntenic location: lncRNA has orthologs in other mouse species, while Egf is conseved, the expression of an antisense lncRNA doesn't appear to be.
 
-BLAST
+also within 1 mb of this lncRNA (and signfificantly differnetially expressed is Pla2g12a
+
+plotting expression in basal cells as this is the point that has the greatest padj and log2FoldChange
+| | |
+|	 ------------- |		 ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2017.59.38.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2017.59.47.png) |
+
 Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
