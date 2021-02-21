@@ -64,13 +64,16 @@ Behaviour of Gm15527 in different cell types
 ### 2: Gm15629 (ENSMUSG00000090054)
 
 Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues.
+
 Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Gm15629.png)
 
 LncRNA has only been identified in two other Mus species
+
 BLAST ?? cant find in genbank for some reason
 Behaviour of  in different cell types:
+
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		
@@ -81,11 +84,13 @@ Behaviour of  in different cell types:
 
 ### 3: Gm42697 (ENSMUSG00000106120)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: egf
+Also overawlpping Egf: predicted gene 42650 (ENSMUSG00000105596) and 	RIKEN cDNA 6330410L21 gene (ENSMUSG00000105960)--> have a look at them too
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+Human Homolog/syntenic location: lncRNA has orthologs in other mouse species, while Egf is conseved, the expression of an antisense lncRNA doesn't appear to be.
+
+BLAST
+Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -97,11 +102,11 @@ Behaviour of  in different cell types:
 
 ### 4: Gm13031 (ENSMUSG00000087698)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: antisense to Padi2 (ENSMUSG00000028927)
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+Human Homolog/syntenic location: lncRNA conserved in mice. Protein coding gene conserved, but lncRNA not present
+ 
+Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -109,13 +114,13 @@ Behaviour of  in different cell types:
 |	LP	|	3	|	Gm13031	|	ENSMUSG00000087698	|	55.68521887	|	3.456775209	|	0.76317455	|	4.529468665	|	5.91E-06	|	0.000421258	|	4	|	140674977	|	140685213	|	-1	|
 |	S	|	3	|	Gm13031	|	ENSMUSG00000087698	|	132.1266243	|	-2.973004485	|	0.498134522	|	-5.96827635	|	2.40E-09	|	1.59E-06		|	4	|	140674977	|	140685213	|	-1	|
 
-### 5: Gm14091 ()
+### 5: Gm14091 (ENSMUSG00000086421)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: antisense to Knstrn ENSMUSG00000027331.
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+Human Homolog/syntenic location: Knstrn. but no antisense overlap lncRNA.
+ 
+Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -123,13 +128,13 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	Gm14091	|	ENSMUSG00000086421	|	53.12878744	|	-2.398914535	|	0.508963665	|	-4.713331619	|	2.44E-06	|	0.000108165|	2	|	118660355	|	118664603	|	-1	|
 |	S	|	3	|	Gm14091	|	ENSMUSG00000086421	|	24.62240463	|	-3.309827299	|	0.591046753	|	-5.599941594	|	2.14E-08	|	8.10E-06		|	2	|	118660355	|	118664603	|	-1	|
 
-### 6: Gm15650 ()
+### 6: Gm15650 (ENSMUSG00000087703)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: antisense to Sh3tc1 ENSMUSG00000036553
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+Human Homolog/syntenic location: protien coding gene conserved, lncRNA not
+
+Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -137,13 +142,17 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	Gm15650	|	ENSMUSG00000087703	|	109.3269826	|	-2.338897108	|	0.812108942	|	-2.880028757	|	0.003976389	|	0.035710139|	5	|	35879899	|	35881829	|	1	|
 |	S	|	3	|	Gm15650	|	ENSMUSG00000087703	|	67.395382	|	-2.932925134	|	0.847256959	|	-3.461671341	|	0.000536832	|	0.012565676		|	5	|	35879899	|	35881829	|	1	|
 
-### 7: Gm28513 ()
+### 7: Gm28513 (ENSMUSG00000099568)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes: 
+- antisense to Rgs16 ENSMUSG00000026475, which also has a sense lncRNA	predicted gene 28512 ENSMUSG00000100183
+- antisense to Rnasel ENSMUSG00000066800
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+overlaps lots of promoter regions
+
+Human Homolog/syntenic location: same protein, no lncRNA
+ 
+Behaviourin different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -151,13 +160,13 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	Gm28513	|	ENSMUSG00000099568	|	154.0247959	|	-3.789380639	|	1.144818015	|	-3.310028833	|	0.000932864	|	0.012303138	|	1	|	153619298	|	153625070	|	-1	|
 |	LP	|	3	|	Gm28513	|	ENSMUSG00000099568	|	451.4280076	|	-5.255830861	|	0.605345175	|	-8.682370123	|	3.88E-18	|	6.90E-15		|	1	|	153619298	|	153625070	|	-1	|
 
-### 8: Gm42705 ()
+### 8: Gm42705 (ENSMUSG00000105324)
 
-Overlapping protein coding genes:
+Overlapping protein coding genes:no protein coding genes nearby, lots of other lncRNAs though. not conserved outside mice
+http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi?PAGE=3&ID=MXq_l_Hdki
+had a look at folding
 
-Human Homolog/syntenic location: 
-BLAST 
-Behaviour of  in different cell types:
+Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
 |	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
@@ -165,11 +174,15 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	Gm42705	|	ENSMUSG00000105324	|	6.209372551	|	-7.023785455	|	2.058735015	|	-3.411699614	|	0.000645592	|	0.009500153		|	3	|	143449138	|	143532773	|	1	|
 |	LP	|	3	|	Gm42705	|	ENSMUSG00000105324	|	20.51994296	|	-2.442031993	|	0.873848629	|	-2.79457095	|	0.005196864	|	0.074513722		|	3	|	143449138	|	143532773	|	1	|
 
-### 9: 8030451A03Rik ()
+### 9: 8030451A03Rik (ENSMUSG00000073821)
+http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi?PAGE=3&ID=26D7JUEc6S
 
 Overlapping protein coding genes:
+- tenascin C ENSMUSG00000028364 (role in cancer)
+- predicted gene 11216 ENSMUSG00000086755
+- RIKEN cDNA 8030451A03 gene ENSMUSG00000073821
 
-Human Homolog/syntenic location: 
+Human Homolog/syntenic location: human version of tnc also has a lncRNA, whose deletion is associated with cancer: DELEC1 ENSG00000173077 http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi?PAGE=3&ID=4pHDjm2Ozq
 BLAST 
 Behaviour of  in different cell types:
 
@@ -179,7 +192,7 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	51.86269352	|	-3.016348472	|	1.065416227	|	-2.83114561	|	0.00463816	|	0.040061746	|	4	|	63898091	|	64068161	|	1	|
 |	LP	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	227.7021443	|	-3.064982509	|	0.502046385	|	-6.104978749	|	1.03E-09	|	3.66E-07		|	4	|	63898091	|	64068161	|	1	|
 
-### 10: Gm10570 ()
+### 10: Gm10570 (ENSMUSG00000073752)
 
 Overlapping protein coding genes:
 
