@@ -134,6 +134,12 @@ Behaviour in different cell types:
 
 Overlapping protein coding genes: antisense to Padi2 (ENSMUSG00000028927)
 
+Has four differentially expressed protein coding genes within 1mb
+- Padi2 (ENSMUSG00000028927) developmentawlly important - severl cardiovascular morphology phenotypes, implicated in neurodegenerative stuff.
+- Epha2 (ENSMUSG00000006445)
+- Fblim1
+- Efhd2
+
 Human Homolog/syntenic location: lncRNA conserved in mice. Protein coding gene conserved, but lncRNA not present
  
 Behaviour in different cell types:
