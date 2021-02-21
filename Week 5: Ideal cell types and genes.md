@@ -87,7 +87,10 @@ Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
 LncRNA has only been identified in two other Mus species
 
-BLAST ?? cant find in genbank for some reason
+BLAST:
+- first exon sequence appears to be unique to mice
+- second exon in rodents generally
+- third exmon unique to mice
 Behaviour of  in different cell types:
 
 
