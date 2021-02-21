@@ -38,6 +38,20 @@ A small number(11) were differentially expressed in three or more cell types
 | Gm10570	| 3| + | + |- | -| -|- |	
 | Gimap1os	| 3| + | + |- | -|- | -|	
 
+| Gene name | Differnetially expressed protein coding genes within 1mb |
+| ------------- | ------------- |
+| Gm15527	| |
+| Gm15629	| |
+| Gm42697	| |
+| Gm13031	| |
+| Gm14091	| |
+| Gm15650	| |
+| Gm28513	| |
+| Gm42705	| |
+| 8030451A03Rik	| |
+| Gm10570	| |
+| Gimap1os	| |
+
 
 Time to look at the behaviour of each of these lncRNAs in their respective cell types 
 
