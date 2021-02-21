@@ -117,12 +117,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	E	|	3	|	Gm14091	|	ENSMUSG00000086421	|	22.66956384	|	-2.050235133	|	0.732271129	|	-2.799830625	|	0.005112943	|	0.099562213	|	predicted gene 14091 [Source:MGI Symbol;Acc:MGI:3650488]	|	2	|	118660355	|	118664603	|	-1	|
+|	LD	|	3	|	Gm14091	|	ENSMUSG00000086421	|	53.12878744	|	-2.398914535	|	0.508963665	|	-4.713331619	|	2.44E-06	|	0.000108165	|	predicted gene 14091 [Source:MGI Symbol;Acc:MGI:3650488]	|	2	|	118660355	|	118664603	|	-1	|
+|	S	|	3	|	Gm14091	|	ENSMUSG00000086421	|	24.62240463	|	-3.309827299	|	0.591046753	|	-5.599941594	|	2.14E-08	|	8.10E-06	|	predicted gene 14091 [Source:MGI Symbol;Acc:MGI:3650488]	|	2	|	118660355	|	118664603	|	-1	|
 
 ### 6: Gm15650 ()
 
@@ -132,12 +131,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	B	|	3	|	Gm15650	|	ENSMUSG00000087703	|	129.9594979	|	-2.437957064	|	0.592316328	|	-4.115971398	|	3.86E-05	|	0.002849873	|	predicted gene 15650 [Source:MGI Symbol;Acc:MGI:3783094]	|	5	|	35879899	|	35881829	|	1	|
+|	LD	|	3	|	Gm15650	|	ENSMUSG00000087703	|	109.3269826	|	-2.338897108	|	0.812108942	|	-2.880028757	|	0.003976389	|	0.035710139	|	predicted gene 15650 [Source:MGI Symbol;Acc:MGI:3783094]	|	5	|	35879899	|	35881829	|	1	|
+|	S	|	3	|	Gm15650	|	ENSMUSG00000087703	|	67.395382	|	-2.932925134	|	0.847256959	|	-3.461671341	|	0.000536832	|	0.012565676	|	predicted gene 15650 [Source:MGI Symbol;Acc:MGI:3783094]	|	5	|	35879899	|	35881829	|	1	|
 
 ### 7: Gm28513 ()
 
@@ -147,12 +145,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	B	|	3	|	Gm28513	|	ENSMUSG00000099568	|	297.8979686	|	-2.304077761	|	0.485387228	|	-4.746885845	|	2.07E-06	|	0.000229037	|	predicted gene 28513 [Source:MGI Symbol;Acc:MGI:5579219]	|	1	|	153619298	|	153625070	|	-1	|
+|	LD	|	3	|	Gm28513	|	ENSMUSG00000099568	|	154.0247959	|	-3.789380639	|	1.144818015	|	-3.310028833	|	0.000932864	|	0.012303138	|	predicted gene 28513 [Source:MGI Symbol;Acc:MGI:5579219]	|	1	|	153619298	|	153625070	|	-1	|
+|	LP	|	3	|	Gm28513	|	ENSMUSG00000099568	|	451.4280076	|	-5.255830861	|	0.605345175	|	-8.682370123	|	3.88E-18	|	6.90E-15	|	predicted gene 28513 [Source:MGI Symbol;Acc:MGI:5579219]	|	1	|	153619298	|	153625070	|	-1	|
 
 ### 8: Gm42705 ()
 
@@ -162,12 +159,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	B	|	3	|	Gm42705	|	ENSMUSG00000105324	|	18.8978368	|	-2.872840932	|	1.018317909	|	-2.821163121	|	0.004784986	|	0.099865483	|	predicted gene 42705 [Source:MGI Symbol;Acc:MGI:5662842]	|	3	|	143449138	|	143532773	|	1	|
+|	LD	|	3	|	Gm42705	|	ENSMUSG00000105324	|	6.209372551	|	-7.023785455	|	2.058735015	|	-3.411699614	|	0.000645592	|	0.009500153	|	predicted gene 42705 [Source:MGI Symbol;Acc:MGI:5662842]	|	3	|	143449138	|	143532773	|	1	|
+|	LP	|	3	|	Gm42705	|	ENSMUSG00000105324	|	20.51994296	|	-2.442031993	|	0.873848629	|	-2.79457095	|	0.005196864	|	0.074513722	|	predicted gene 42705 [Source:MGI Symbol;Acc:MGI:5662842]	|	3	|	143449138	|	143532773	|	1	|
 
 ### 9: 8030451A03Rik ()
 
@@ -177,12 +173,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	B	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	59.52842217	|	2.685963084	|	0.75757131	|	3.545492086	|	0.000391881	|	0.01782555	|	RIKEN cDNA 8030451A03 gene [Source:MGI Symbol;Acc:MGI:1915353]	|	4	|	63898091	|	64068161	|	1	|
+|	LD	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	51.86269352	|	-3.016348472	|	1.065416227	|	-2.83114561	|	0.00463816	|	0.040061746	|	RIKEN cDNA 8030451A03 gene [Source:MGI Symbol;Acc:MGI:1915353]	|	4	|	63898091	|	64068161	|	1	|
+|	LP	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	227.7021443	|	-3.064982509	|	0.502046385	|	-6.104978749	|	1.03E-09	|	3.66E-07	|	RIKEN cDNA 8030451A03 gene [Source:MGI Symbol;Acc:MGI:1915353]	|	4	|	63898091	|	64068161	|	1	|
 
 ### 10: Gm10570 ()
 
@@ -192,12 +187,11 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	LD	|	3	|	Gm10570	|	ENSMUSG00000073752	|	7.831840165	|	-5.223209164	|	1.545952254	|	-3.378635498	|	0.000728465	|	0.010251816	|	predicted gene 10570 [Source:MGI Symbol;Acc:MGI:3642427]	|	4	|	130200349	|	130202467	|	-1	|
+|	LP	|	3	|	Gm10570	|	ENSMUSG00000073752	|	17.76069584	|	-4.045936226	|	1.032762378	|	-3.917586767	|	8.94E-05	|	0.003250865	|	predicted gene 10570 [Source:MGI Symbol;Acc:MGI:3642427]	|	4	|	130200349	|	130202467	|	-1	|
+|	S	|	3	|	Gm10570	|	ENSMUSG00000073752	|	3.619822916	|	3.097310447	|	1.162903431	|	2.663428762	|	0.007734879	|	0.081974977	|	predicted gene 10570 [Source:MGI Symbol;Acc:MGI:3642427]	|	4	|	130200349	|	130202467	|	-1	|
 
 ### 11: Gimap1os ()
 
@@ -207,10 +201,9 @@ Human Homolog/syntenic location:
 BLAST 
 Behaviour of  in different cell types:
 
-| Cell type  | log2FoldChange| Adjusted P-value |
-| ------------- | ------------- |------------- |
-|Luminal Differentiated||
-|Luminal Progenitor|||
-|Basal|||
-|Stromal|||
+|	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	description	|	chromosome_name	|	start_position	|	end_position	|	strand	|
+|	 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |		 ------------- |	
+|	LD	|	3	|	Gimap1os	|	ENSMUSG00000044867	|	40.66463525	|	-4.233494504	|	1.102813041	|	-3.838814327	|	0.00012363	|	0.002770269	|	GTPase, IMAP family member 1, opposite strand [Source:MGI Symbol;Acc:MGI:3781523]	|	6	|	48715280	|	48718378	|	-1	|
+|	LP	|	3	|	Gimap1os	|	ENSMUSG00000044867	|	198.9553236	|	3.231920839	|	1.158399366	|	2.789988439	|	0.005270992	|	0.074513722	|	GTPase, IMAP family member 1, opposite strand [Source:MGI Symbol;Acc:MGI:3781523]	|	6	|	48715280	|	48718378	|	-1	|
+|	S	|	3	|	Gimap1os	|	ENSMUSG00000044867	|	168.0123291	|	-3.90957232	|	0.71819819	|	-5.443584202	|	5.22E-08	|	1.38E-05	|	GTPase, IMAP family member 1, opposite strand [Source:MGI Symbol;Acc:MGI:3781523]	|	6	|	48715280	|	48718378	|	-1	|
 
