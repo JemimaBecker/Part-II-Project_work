@@ -136,9 +136,14 @@ Overlapping protein coding genes: antisense to Padi2 (ENSMUSG00000028927)
 
 Has four differentially expressed protein coding genes within 1mb
 - Padi2 (ENSMUSG00000028927) developmentawlly important - severl cardiovascular morphology phenotypes, implicated in neurodegenerative stuff.
-- Epha2 (ENSMUSG00000006445)
-- Fblim1
-- Efhd2
+- Epha2 (ENSMUSG00000006445) abnormal development phenotype
+- Fblim1 (ENSMUSG00000006219) abnormal development phenotypes
+- Efhd2 (ENSMUSG00000040659)
+
+| | | |
+|	 ------------- |		 ------------- |		 ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.47.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.36.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.26.png) |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.17.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.59.07.png) | |
 
 Human Homolog/syntenic location: lncRNA conserved in mice. Protein coding gene conserved, but lncRNA not present
  
