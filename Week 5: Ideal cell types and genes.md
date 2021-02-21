@@ -77,13 +77,13 @@ Behaviour of Gm15527 in different cell types
 
 ### 2: Gm15629 (ENSMUSG00000090054)
 
-Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues. Rubcnl also within 1mb (increased expression assocaited w/ cervical cancer, prognostic marker in endometrial cancer, strongly associated with gastric cancer https://www.proteinatlas.org/ENSG00000102445-RUBCNL/pathology)
+Overlapping protein coding genes: Lcp1 (ENSMUSG00000021998), expression is induced accompanying tumorigenesis in solid tissues. Rubcnl (ENSMUSG00000034959) also within 1mb (increased expression assocaited w/ cervical cancer, prognostic marker in endometrial cancer, strongly associated with gastric cancer https://www.proteinatlas.org/ENSG00000102445-RUBCNL/pathology)
 
 Behaviour in Luminal differentiated cells - appears to be a nice correlation for all three - same patterns but much hihger count in lncRNA. According to ENCODE lncRNAs are generally expressed at a very low level relative to protein coding genes so this is interesting.
 
 |		|		|	 	|
 |	 ------------- |		 ------------- |		 ------------- |	
-| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.02.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.29.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2016.23.44.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.45.36.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.45.13.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.45.23.png) |
 Human Homolog/syntenic location: Lcp1, associated w tumours in humans
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Mouse_Gm15629.png)
@@ -109,17 +109,17 @@ Behaviour of  in different cell types:
 ### 3: Gm42697 (ENSMUSG00000106120)
 
 Overlapping protein coding genes: egf
+
 Also overawlpping Egf: predicted gene 42650 (ENSMUSG00000105596) and 	RIKEN cDNA 6330410L21 gene (ENSMUSG00000105960)--> have a look at them too
 
-Human Homolog/syntenic location: lncRNA has orthologs in other mouse species, while Egf is conseved, the expression of an antisense lncRNA doesn't appear to be.
+also within 1 mb of this lncRNA (and signfificantly differnetially) expressed is Pla2g12a (ENSMUSG00000027999)
 
-also within 1 mb of this lncRNA (and signfificantly differnetially expressed is Pla2g12a
+Human Homolog/syntenic location: lncRNA has orthologs in other mouse species, while Egf is conseved, the expression of an antisense lncRNA doesn't appear to be.
 
 plotting expression in basal cells as this is the point that has the greatest padj and log2FoldChange
 | | |
 |	 ------------- |		 ------------- |
-| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2017.59.38.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2017.59.47.png) |
-
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.49.45.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-21%20at%2018.49.34.png) |
 Behaviour in different cell types:
 
 |	Cell type	|	Number of cell types	|	external_gene_name	|	ensembl_gene_id	|	baseMean	|	log2FoldChange	|	lfcSE	|	stat	|	pvalue	|	padj	|	chromosome_name	|	start_position	|	end_position	|	strand	|
