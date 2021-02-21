@@ -40,17 +40,17 @@ A small number(11) were differentially expressed in three or more cell types
 
 | Gene name | Differnetially expressed protein coding genes within 1mb |
 | ------------- | ------------- |
-| Gm15527	| |
-| Gm15629	| |
-| Gm42697	| |
-| Gm13031	| |
-| Gm14091	| |
-| Gm15650	| |
-| Gm28513	| |
-| Gm42705	| |
-| 8030451A03Rik	| |
-| Gm10570	| |
-| Gimap1os	| |
+| Gm15527	| none |
+| Gm15629	| Rubcnl, Lcp1|
+| Gm42697	| Pla2g12a|
+| Gm13031	| Padi2, Epha2,Fblim2,Efhd2|
+| Gm14091	| Knstrn|
+| Gm15650	| Dok7, Htra3|
+| Gm28513	| Rgs16, Teddm2, Glul|
+| Gm42705	| none|
+| 8030451A03Rik	| Akna, Tmem268, Pappa|
+| Gm10570	|Zbtb8os, Marcksl1, Fabp3, Zcchc17 |
+| Gimap1os	| Rarres2, Aoc1, Igf2bp3|
 
 
 Time to look at the behaviour of each of these lncRNAs in their respective cell types 
