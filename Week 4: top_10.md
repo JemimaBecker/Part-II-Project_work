@@ -57,10 +57,12 @@ Embigin padj: 0.001311741, log2FoldChange: -3.861413 (red)
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm17509 expression (ENSMUSG00000091423)",subtitle = "Luminal differentiated cells") 
 
 
-|   |  |
-| ------------- | ------------- |
-| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.27.43.png)|
+|   |  |  |
+| ------------- | ------------- | ------------- |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.27.43.png)| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-23%20at%2016.09.11.png) |
+| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-23%20at%2015.58.15.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-23%20at%2015.59.05.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-23%20at%2016.08.30.png) |
 
+other differentially expressed protein coding genes in the vicinity: Nim1k (ENSMUSG00000095930, padj=0.04833661, log2foldchange=2.068124)
 
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
