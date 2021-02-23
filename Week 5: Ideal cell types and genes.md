@@ -1,5 +1,7 @@
 # Week 5: Identifying the best cell type and candidate genes
 
+## DESeq2
+
 I ran DESeq2 on the lncRNA genes in each cell type individually to examine:
 
 - How many genes were differentially expressed
@@ -53,7 +55,13 @@ A small number(11) were differentially expressed in three or more cell types
 | Gimap1os	| Rarres2, Aoc1, Igf2bp3|
 
 
-Time to look at the behaviour of each of these lncRNAs in their respective cell types 
+## EdgeR
+
+look at lncRNA genes across cell types and see how they cluster
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/heatmap%20top%20100%20lncrna%20all%20samples.png)
+
+looking here there is reasonable clustering by cell type, suggesting a degree of cell type specificity of expression pattern. Gene names arent really legible as they are so small, but are uploaded as a separate list
 
 ### 1: Gm15527 (ENSMUSG00000086946)
 
@@ -74,6 +82,8 @@ Behaviour of Gm15527 in different cell types
 |	LD	|	4	|	Gm15527	|	ENSMUSG00000086946	|	9.373327961	|	-4.338756071	|	1.381996683	|	-3.139483709	|	0.001692458	|	0.019286727	|	6	|	54222727	|	54256061	|	-1	|
 |	LP	|	4	|	Gm15527	|	ENSMUSG00000086946	|	25.31616911	|	3.4950952	|	0.981346017	|	3.561531958	|	0.000368697	|	0.010260152	|		6	|	54222727	|	54256061	|	-1	|
 |	S	|	4	|	Gm15527	|	ENSMUSG00000086946	|	46.33272281	|	-2.390907834	|	0.735387141	|	-3.251223335	|	0.001149096	|	0.021106651	|	6	|	54222727	|	54256061	|	-1	|
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm15527.png)
 
 ### 2: Gm15629 (ENSMUSG00000090054)
 
@@ -106,6 +116,8 @@ Behaviour of  in different cell types:
 |	LD	|	4	|	Gm15629	|	ENSMUSG00000090054	|	1079.308889	|	-2.472095177	|	0.37445647	|	-6.601822577	|	4.06E-11	|	7.81E-09		|	14	|	75434513	|	75436711	|	-1	|
 |	S	|	4	|	Gm15629	|	ENSMUSG00000090054	|	573.9708165	|	-4.312986186	|	0.756863838	|	-5.698496837	|	1.21E-08	|	5.33E-06	|	14	|	75434513	|	75436711	|	-1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm15629.png)
+
 ### 3: Gm42697 (ENSMUSG00000106120)
 
 Overlapping protein coding genes: egf
@@ -128,6 +140,8 @@ Behaviour in different cell types:
 |	B	|	4	|	Gm42697	|	ENSMUSG00000106120	|	116.9573459	|	-17.21151338	|	1.605236214	|	-10.72210634	|	8.02E-27	|	1.42E-23		|	3	|	129522494	|	129533837	|	1	|
 |	LD	|	4	|	Gm42697	|	ENSMUSG00000106120	|	88.48331024	|	-2.943625455	|	0.818927132	|	-3.594490084	|	0.000325028	|	0.005770489		|	3	|	129522494	|	129533837	|	1	|
 |	LP	|	4	|	Gm42697	|	ENSMUSG00000106120	|	80.49656195	|	-2.880679672	|	0.870029301	|	-3.311014546	|	0.000929584	|	0.02237282		|	3	|	129522494	|	129533837	|	1	|
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm42697.png)
 
 
 ### 4: Gm13031 (ENSMUSG00000087698)
@@ -157,6 +171,8 @@ Behaviour in different cell types:
 |	LP	|	3	|	Gm13031	|	ENSMUSG00000087698	|	55.68521887	|	3.456775209	|	0.76317455	|	4.529468665	|	5.91E-06	|	0.000421258	|	4	|	140674977	|	140685213	|	-1	|
 |	S	|	3	|	Gm13031	|	ENSMUSG00000087698	|	132.1266243	|	-2.973004485	|	0.498134522	|	-5.96827635	|	2.40E-09	|	1.59E-06		|	4	|	140674977	|	140685213	|	-1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm1301.png)
+
 ### 5: Gm14091 (ENSMUSG00000086421)
 
 Overlapping protein coding genes: antisense to Knstrn ENSMUSG00000027331, which is mutated in 19% of cuteneous squamous cell carcinomas (Lee CS et al, Nat Genet 2014).
@@ -180,6 +196,9 @@ Behaviour in different cell types:
 |	LD	|	3	|	Gm14091	|	ENSMUSG00000086421	|	53.12878744	|	-2.398914535	|	0.508963665	|	-4.713331619	|	2.44E-06	|	0.000108165|	2	|	118660355	|	118664603	|	-1	|
 |	S	|	3	|	Gm14091	|	ENSMUSG00000086421	|	24.62240463	|	-3.309827299	|	0.591046753	|	-5.599941594	|	2.14E-08	|	8.10E-06		|	2	|	118660355	|	118664603	|	-1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm14091.png)
+
+
 ### 6: Gm15650 (ENSMUSG00000087703)
 
 Overlapping protein coding genes: antisense to Sh3tc1 ENSMUSG00000036553
@@ -193,6 +212,9 @@ Behaviour in different cell types:
 |	B	|	3	|	Gm15650	|	ENSMUSG00000087703	|	129.9594979	|	-2.437957064	|	0.592316328	|	-4.115971398	|	3.86E-05	|	0.002849873		|	5	|	35879899	|	35881829	|	1	|
 |	LD	|	3	|	Gm15650	|	ENSMUSG00000087703	|	109.3269826	|	-2.338897108	|	0.812108942	|	-2.880028757	|	0.003976389	|	0.035710139|	5	|	35879899	|	35881829	|	1	|
 |	S	|	3	|	Gm15650	|	ENSMUSG00000087703	|	67.395382	|	-2.932925134	|	0.847256959	|	-3.461671341	|	0.000536832	|	0.012565676		|	5	|	35879899	|	35881829	|	1	|
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm15650.png)
+
 
 ### 7: Gm28513 (ENSMUSG00000099568)
 
@@ -212,6 +234,9 @@ Behaviourin different cell types:
 |	LD	|	3	|	Gm28513	|	ENSMUSG00000099568	|	154.0247959	|	-3.789380639	|	1.144818015	|	-3.310028833	|	0.000932864	|	0.012303138	|	1	|	153619298	|	153625070	|	-1	|
 |	LP	|	3	|	Gm28513	|	ENSMUSG00000099568	|	451.4280076	|	-5.255830861	|	0.605345175	|	-8.682370123	|	3.88E-18	|	6.90E-15		|	1	|	153619298	|	153625070	|	-1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm28513.png)
+
+
 ### 8: Gm42705 (ENSMUSG00000105324)
 
 Overlapping protein coding genes:no protein coding genes nearby, lots of other lncRNAs though. not conserved outside mice
@@ -225,6 +250,9 @@ Behaviour in different cell types:
 |	B	|	3	|	Gm42705	|	ENSMUSG00000105324	|	18.8978368	|	-2.872840932	|	1.018317909	|	-2.821163121	|	0.004784986	|	0.099865483		|	3	|	143449138	|	143532773	|	1	|
 |	LD	|	3	|	Gm42705	|	ENSMUSG00000105324	|	6.209372551	|	-7.023785455	|	2.058735015	|	-3.411699614	|	0.000645592	|	0.009500153		|	3	|	143449138	|	143532773	|	1	|
 |	LP	|	3	|	Gm42705	|	ENSMUSG00000105324	|	20.51994296	|	-2.442031993	|	0.873848629	|	-2.79457095	|	0.005196864	|	0.074513722		|	3	|	143449138	|	143532773	|	1	|
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm42705.png)
+
 
 ### 9: 8030451A03Rik (ENSMUSG00000073821)
 http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi?PAGE=3&ID=26D7JUEc6S
@@ -244,6 +272,8 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	51.86269352	|	-3.016348472	|	1.065416227	|	-2.83114561	|	0.00463816	|	0.040061746	|	4	|	63898091	|	64068161	|	1	|
 |	LP	|	3	|	8030451A03Rik	|	ENSMUSG00000073821	|	227.7021443	|	-3.064982509	|	0.502046385	|	-6.104978749	|	1.03E-09	|	3.66E-07		|	4	|	63898091	|	64068161	|	1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/803...rik.png)
+
 ### 10: Gm10570 (ENSMUSG00000073752)
 
 Overlapping protein coding genes:
@@ -257,6 +287,10 @@ Behaviour of  in different cell types:
 |	LD	|	3	|	Gm10570	|	ENSMUSG00000073752	|	7.831840165	|	-5.223209164	|	1.545952254	|	-3.378635498	|	0.000728465	|	0.010251816	|	4	|	130200349	|	130202467	|	-1	|
 |	LP	|	3	|	Gm10570	|	ENSMUSG00000073752	|	17.76069584	|	-4.045936226	|	1.032762378	|	-3.917586767	|	8.94E-05	|	0.003250865	|	4	|	130200349	|	130202467	|	-1	|
 |	S	|	3	|	Gm10570	|	ENSMUSG00000073752	|	3.619822916	|	3.097310447	|	1.162903431	|	2.663428762	|	0.007734879	|	0.081974977		|	4	|	130200349	|	130202467	|	-1	|
+
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gm10570.png)
+
 
 ### 11: Gimap1os (ENSMUSG00000044867)
 
@@ -272,3 +306,4 @@ Behaviour of  in different cell types:
 |	LP	|	3	|	Gimap1os	|	ENSMUSG00000044867	|	198.9553236	|	3.231920839	|	1.158399366	|	2.789988439	|	0.005270992	|	0.074513722		|	6	|	48715280	|	48718378	|	-1	|
 |	S	|	3	|	Gimap1os	|	ENSMUSG00000044867	|	168.0123291	|	-3.90957232	|	0.71819819	|	-5.443584202	|	5.22E-08	|	1.38E-05		|	6	|	48715280	|	48718378	|	-1	|
 
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/gimap1os.png)
