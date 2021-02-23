@@ -64,6 +64,7 @@ Embigin padj: 0.001311741, log2FoldChange: -3.861413 (red)
 
 other differentially expressed protein coding genes in the vicinity: Nim1k (ENSMUSG00000095930, padj=0.04833661, log2foldchange=2.068124)
 
+looking at the patterns of regulation here, it seems that Gm17509 and Embigin are co-regulated, whereas Nim1k is regulated separately.
 
 ### 2:ENSMUSG00000085649 A730032A03Rik
 
