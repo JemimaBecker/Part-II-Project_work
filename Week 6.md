@@ -4,6 +4,7 @@ lncRNAs that im going to look at:
 
 of the lncRNAs differentially expressed in luminal differentiated cells, 170 of these show differential expression specific to LD cells, while 64 show differential expression in one or more other cell types in the mammary gland.
 
-Filtering again to a more stringent p value of <0.05:
-- 119 unique
-- 59 shared genes
+Looking more closesly at the genes that are differentially expressed in the luminal differnetiated cells adn then one or more other cell types
+- 64 total
+- of these, 21 have no equivalent in humans
+- and 43 have an equivalent (not necessarily wth sequence conservation) in a syntenic locus in humans
