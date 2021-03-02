@@ -14,17 +14,9 @@ having a quick look at gene ontologies etc on enrichr for (all) proteins that ar
 | feature analysed | Up regulated (plot) | Up regualted (table) | Down regulated (plot) | Down regulated (table) |
 | ------------- | ------------- |------------- | ------------- | ------------- |
 | GO biological processes 2018 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03- ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.51.16upregulated%20proteins.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.48.14downregulated%20proteins.png) |
-
 || ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.51.16upregulated%20proteins.png)  |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.48.24downregulated%20proteins.png) |
-
-
 | WikiPathways 2019 Mouse | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.50.46upregulated%20proteins.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.48.37downregulated%20proteins.png) |
-
 || ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.50.55upregulated%20proteins.png)  |  ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.48.43downregulated%20proteins.png) |
-
-
-
 | MGI mammalian phenotype level 4 2019| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.51.32upregulated%20proteins.png)| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/downregulated%20proteinsdownregulated%20proteins.png) |
-
 || ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/Screenshot%202021-03-02%20at%2009.51.41upregulated%20proteins.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week6%20images/downregualted%20proteins%202downregulated%20proteins.png) |
 
