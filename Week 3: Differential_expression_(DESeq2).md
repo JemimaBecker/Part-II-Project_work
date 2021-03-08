@@ -81,9 +81,9 @@ low counts [2]     : 2937, 56%
 > with(res, plot(log2FoldChange, -log10(pvalue),pch=20,main="Volcano plot",xlim=c(-3,3),ylim=c(-1,20)))
 > with(subset(res,padj<0.1),points(log2FoldChange, -log10(pvalue),pch=20, col="blue"))
 > with(subset(res,padj<0.1 & abs(log2FoldChange)>2),points(log2FoldChange, -log10(pvalue),pch=20,col="red"))
-
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/volcano_plot.png)
 ```
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/volcano_plot.png)
+
 note that the names and informtation on the differentially expressed genes are saved as two separate files annotated_red.csv and annotated_blue.csv
 
 return the names of the differentially expressed genes
@@ -119,6 +119,6 @@ see separate file for code on generation of manhattan plot function
 > annotated_resdf2 <- na.omit(annotated_resdf) #remove the NAs
 > manhattan.plot(factor(annotated_resdf2$chromosome_name, levels=c(1:19, "X","Y")),main="Differential expression of noncoding RNAs in luminal differentiated > cells",
 >                annotated_resdf2$start_position,annotated_resdf2$pvalue,sig.level=5e-3)
-
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2010.17.25.png)
 ```
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2010.17.25.png)
+
