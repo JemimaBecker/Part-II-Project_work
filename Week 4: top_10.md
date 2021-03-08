@@ -9,14 +9,14 @@ of these, 9/10 overlap with a CTCF binding site, and all 10 overlap a promoter f
 ## 1: Prepare data
 
 load libraries
-
+```
 > library("reshape")
 > library("tidyr")
 > library("dplyr")
 > library("ggplot2")
-
+```
 Reformat FPKM data
-
+```
 > par(mfrow=c(2,2))
 > df <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped
 > df.m <- melt(df)
@@ -33,7 +33,7 @@ Reformat FPKM data
 > df.m.split$Stage_ordered <- factor(df.m.split$Stage, 
 >                              levels=c('Nulliparous','Gestation','Lactation','Involution'))
 > saveRDS(df.m.split, file = "df.m.split.rds")
-
+```
 ## 2: Plot gene expression by stage
 
 ### 1:ENSMUSG00000091423 Gm17509
@@ -47,7 +47,7 @@ Embigin padj: 0.001311741, log2FoldChange: -3.861413 (red)
 
 > http://www.informatics.jax.org/gxd/marker/MGI:95321?tab=stagegridtab#gxd=markerMgiId%3DMGI%3A95321%26theilerStage%3D%26assayType%3D%26results%3D100%26startIndex%3D0%26sort%3D%26dir%3Dasc%26tab%3Dstagegridtab
 > https://www.ensembl.org/Mus_musculus/Gene/Summary?db=core;g=ENSMUSG00000021728;r=13:117218701-117221075;t=ENSMUST00000022242
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000091423" & Cell.type=="Luminal_differentiated"), 
 >                 aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                     y=value, colour=Stage_ordered, group = 3)) +
@@ -56,7 +56,7 @@ Embigin padj: 0.001311741, log2FoldChange: -3.861413 (red)
 >    facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm17509 expression (ENSMUSG00000091423)",subtitle = "Luminal differentiated cells") 
 
-
+```
 |   |  |  |
 | ------------- | ------------- | ------------- |
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm17509.png)|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.27.43.png)| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Week%205%20Images/Screenshot%202021-02-23%20at%2016.09.11.png) |
@@ -71,7 +71,7 @@ looking at the patterns of regulation here, it seems that Gm17509 and Embigin ar
 Antisense to Wfdc5 (ENSMUSG00000040154) - an extracellular protease inhibitor. Weird patterns, doesnt make it through to ither red or bue significance categories
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.29.44.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085649" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -79,7 +79,7 @@ Antisense to Wfdc5 (ENSMUSG00000040154) - an extracellular protease inhibitor. W
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="A730032A03Rik expression (ENSMUSG00000085649)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/a730032a03rik.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/Screenshot%202021-02-12%20at%2017.36.26.png)|
@@ -89,7 +89,7 @@ Antisense to Wfdc5 (ENSMUSG00000040154) - an extracellular protease inhibitor. W
 Antisense to C1s1 (ENSMUSG00000038521) doesnt make it through to either significance category
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.39.41.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000089961" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -97,7 +97,7 @@ Antisense to C1s1 (ENSMUSG00000038521) doesnt make it through to either signific
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm16567 expression (ENSMUSG00000089961)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm16567.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.41.58.png)|
@@ -109,7 +109,7 @@ Antisense to Ivns1abp (ENSMUSG00000023150) - role in cell death?
 Ivns1abp padj: 0.002807668, log2FoldChange: -1.770356 (blue)
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.49.46.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000100954" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -117,7 +117,7 @@ Ivns1abp padj: 0.002807668, log2FoldChange: -1.770356 (blue)
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm10138 expression (ENSMUSG00000100954)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10138.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-12%20at%2017.51.46.png)
@@ -127,7 +127,7 @@ Ivns1abp padj: 0.002807668, log2FoldChange: -1.770356 (blue)
 Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMUSG00000041577). Neither make it through to significance categories
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851%20location.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000090208" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -135,7 +135,7 @@ Antisense to two protein coding genes Optc (ENSMUSG00000010311) and Prelp (ENSMU
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm15851 expression (ENSMUSG00000090208)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |   |
 | ------------- | ------------- | ------------- |
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm15851.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/optc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/prelp.png) |
@@ -149,7 +149,7 @@ Padi2: padj: 3.567672e-10, log2FoldChange: 3.935478 (red)
 Sdhb variance isnt significant.
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.12.50.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000087698" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -157,7 +157,7 @@ Sdhb variance isnt significant.
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm13031 expression (ENSMUSG00000087698)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |   |
 | ------------- | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm13031.png)| ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.17.38.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.18.15.png) |
@@ -171,7 +171,7 @@ Antisense to Tox (ENSMUSG00000041272, thymocyte selection-associated high mobili
 Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2234360/
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.22.18.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000086052" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -179,7 +179,7 @@ Development of all CD4 T lineages requires nuclear factor TOX https://www.ncbi.n
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11802 expression (ENSMUSG00000086052)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11802.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.26.14.png) |
@@ -193,7 +193,7 @@ Rprd1b promotes cell proliferation and is upregulated in tumours. Padj= 1.914443
 upregulation of Tgm2 associated with cancer metastasis and lower survival rates, implicated also in breast cancer. Padj=5.14246 e-05, log2FoldChange= 2.990424 (red)
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.32.27.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000092283" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -201,7 +201,7 @@ upregulation of Tgm2 associated with cancer metastasis and lower survival rates,
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm20412 expression (ENSMUSG00000092283)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm20412.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.43.48.png) |
@@ -216,7 +216,7 @@ Ptprv May play a role in the maintenance of pluripotency. Down-regulated during 
 Lgr6 "Receptor for R-spondins that potentiates the canonical Wnt signaling pathway and acts as a marker of multipotent stem cells in the epidermis..May act as a tumor suppressor." https://www.uniprot.org/uniprot/Q9HBX8
 
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.53.08.png)
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000097988" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -224,7 +224,7 @@ Lgr6 "Receptor for R-spondins that potentiates the canonical Wnt signaling pathw
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm10535 expression (ENSMUSG00000097988)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  | |
 | ------------- | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm10535.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.56.58.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2012.57.37.png) |
@@ -241,7 +241,7 @@ lots of protein coding genes in the near vicinity
 - Vps25 ENSMUSG00000078656, not significant. Vacuolar protein-sorting-associated protein 25, Component of the ESCRT-II complex
 - Becn1 ENSMUSG00000035086, padj= 8.836736e-06, log2FoldChange= -2.426348 (red). role in regulation of tumourigenesis and cell death
 - Ramp2 ENSMUSG00000001240, not significant. Receptor activity modifying protein 2, role in glycosylation and transportation of adrenomedullin receptor to the cell surface
-
+```
 > plot <- ggplot(data=subset(df.m.split, X=="ENSMUSG00000085083" & Cell.type=="Luminal_differentiated"), 
 >                aes(x=factor(Age,levels=c("d0","d1","d5","d5.5","d6","d9","d9.5","d10","d14","d14.5","d15")), 
 >                    y=value, colour=Stage_ordered, group = 3)) +
@@ -249,7 +249,7 @@ lots of protein coding genes in the near vicinity
 >   geom_line() +
 >   facet_wrap(~ Stage_ordered, ncol=2 )  
 > plot + labs(x = "Age", y= "Expression (FPKM)", title="Gm11615 expression (ENSMUSG00000085083)",subtitle = "Luminal differentiated cells") 
-
+```
 |   |  |
 | ------------- | ------------- |
 |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/gm11615.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-13%20at%2014.33.29.png) |
