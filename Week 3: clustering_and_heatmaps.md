@@ -82,9 +82,9 @@ annotate this list
 > rownames(ensEMBL2id) <- ensEMBL2id$ensembl_gene_id
 > rownames(selectvar_luminal) <- selectvar_luminal[,1]
 > selectvar_luminal_annotated  <- merge(selectvar_luminal, ensEMBL2id, by=0)
-
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.58.13.png)
 ```
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.58.13.png)
+
 a problem here: some of the gene biotypes can apply to both noncoding and protien coding RNAs, so by filtering by biotype I have to choose between including ALL ncRNAs (and including a few protein coding genes) or only including ncRNAs and missing a few of them. >:( shit 
 ```
 > highly_variable_lcpm <- logcounts[select_var,]
@@ -101,9 +101,9 @@ had an error trying to run col.cell - will try again at some point
 > heatmap.2(highly_variable_lcpm,col=rev(morecols(50)),trace="none",main="Top 100 most variable genes across Luminal samples",
 >           scale="row",cex.lab=0.6)
 > legend(inset=c(-0.2,0),cex=0.5,"bottomleft",fill=c("purple","pink","orange","red","blue","green","yellow"),legend=levels(sampleinfo$Cell.type))
-
-![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.56.05.png)
 ```
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-07%20at%2015.56.05.png)
+
 ## 3: MDS plotting and generation of interactive MDS plot
 ```
 > highly_variable_lcpm <- logcounts[select_var,]
