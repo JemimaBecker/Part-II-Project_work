@@ -1,7 +1,7 @@
 ### Prep
 
 load libraries 
-
+```
 > install.packages(c("RColorBrewer", "mixOmics"))
 > source("http://bioconductor.org/biocLite.R")
 > biocLite("edgeR")
@@ -17,11 +17,11 @@ load libraries
 > library(gplots)
 > library(RColorBrewer)
 > library(NMF)
-
+```
 ### create object that is just the counts data for lncRNAS
 
 1: loading ensembl annotations
-
+```
 > MouseMammaryGland_Cleaned_rawCounts <- read.csv("/data/homes/rsh46/MammaryGlandData/MouseMammaryGland_Cleaned_rawCounts.csv")
 > library("biomaRt")
 
@@ -38,9 +38,9 @@ load libraries
 > message("+-------------------------------------------------------------------------------")
 > message("+ Merge Expression and ensEMBL Annotations")
 > message("+-------------------------------------------------------------------------------")
-
+```
 2: adding annotations to raw counts and filtering 
-
+```
 > raw <-MouseMammaryGland_Cleaned_rawCounts[,-1]
 > rownames(raw) <- MouseMammaryGland_Cleaned_rawCounts[,1]
 > annotated_raw  <- merge(FPKM_unG, ensEMBL2id, by=0)
@@ -56,33 +56,33 @@ load libraries
 
 
 > raw_noncoding <- raw_noncoding[,c(1:453)] #remove other annotations
-
+```
 ### prepare and organise data
-
+```
 > sampleinfo <- MouseMammaryGland_Cleaned_MetaData
 > seqdata <- raw_noncoding
 > countdata <- seqdata[,-c(1)]
 > rownames(countdata) <- seqdata[,1]
 > table(colnames(countdata)==sampleinfo$X)
-
+```
 convert counts to DGEList object 
-
+```
 > y <- DGEList(countdata)
 > group <- paste(sampleinfo$Cell.type, sampleinfo$Stage, sep=".")
 > group <- factor(group)
 > y$samples$group <- group
-
+```
 filtering lowly expressed genes
-
+```
 > myCPM <- cpm(countdata)
 > thresh <- myCPM > 0.5
 > keep <- rowSums(thresh) > 2
 > plot(myCPM[,1],countdata[,1])
-
+```
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-04%20at%2021.39.11.png)
 
 ### multidimensional scaling plots
-
+```
 > plotMDS(y)
 > par(mfrow=c(1,2))
 > col.cell <- c("purple","orange", "red", "blue", "yellow", "green","pink")[sampleinfo$Cell.type]
@@ -91,5 +91,5 @@ filtering lowly expressed genes
 > plotMDS(y,dim=c(3,4),col=col.cell,pch=16)
 > legend("topleft",fill=c("purple","orange", "red", "blue", "yellow", "green","pink"),legend=levels(sampleinfo$Cell.type))
 > title("Cell type")
-
+```
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-04%20at%2021.38.57.png)
