@@ -3,9 +3,12 @@ if(!require("BiocManager"))
 BiocManager::install("IRanges")
 library(IRanges)
 
+CH2_lncRNAs <- master_spreadsheet %>% dplyr::filter(master_spreadsheet$chromosome_name == "2" & master_spreadsheet$File == "unique_red_lncRNA")
+
+
 CTCF_locations <- mus_musculus.GRCm39.Regulatory_Build.regulatory_features.20201021 %>% dplyr::filter(mus_musculus.GRCm39.Regulatory_Build.regulatory_features.20201021$V3 ==
                                                                                                             "CTCF_binding_site")
-chr1_lncRNA_startstop <- overlaps_chr2_names
+chr1_lncRNA_startstop <- CH2_lncRNAs
 ir1 <- IRanges(start=chr1_lncRNA_startstop$end_position,end=chr1_lncRNA_startstop$start_position)
 
 chr1_CTCF <- CTCF_locations %>% dplyr::filter(CTCF_locations$V1 == "2")
