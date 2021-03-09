@@ -24,6 +24,8 @@ Combinations of overlaps
 |1|5|54|
 |0|1|16|
 
+Have a look at which combinations are most common: most common is promoter overlap
+
 |number fulfilled |Transcription Factor binding site | Promoter flank region | Promoter | Enhancer | CTCF binding site | #genes |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
 |1|-|-|Y|-|-|37|
