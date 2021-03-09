@@ -6,13 +6,49 @@ data from http://ftp.ensembl.org/pub/ (Ensembl data)
 
 run on the 170 differentially expressed lncRNAs that were uniquely differentially expressed in luminal differentiated cells
 
-of these 170, 155 (~91%) overlapped a regulatory region
+of these 170, 154 (~91%) overlapped a regulatory region
 
 |Regulatory feature| Promoter  |CTCF binding site|Promoter flank|Enhancer|TF binding site|
 | ------------- | ------------- |------------- |------------- |------------- |------------- |
 |# overlaps|102|90|81|47|23|
 |%lncRNAs that overlap|60.0%|52.9%|47.6%|27.6%|13.5%|
 
+Combinations of overlaps
+
+| Number fulfilled | combinations possible | number of genes |
+| ------------- | ------------- |------------- |
+|5|1|7|
+|4|5|18|
+|3|10|33|
+|2|10|42|
+|1|5|54|
+|0|1|16|
+
+|number fulfilled |Transcription Factor binding site | Promoter flank region | Promoter | Enhancer | CTCF binding site | #genes |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
+|1|-|-|Y|-|-|37|
+|2|-|-|Y|-|Y|21|
+|0|-|-|-|-|-|16|
+|2|-|Y|-|-|Y|12|
+|3|-|Y|Y|-|Y|12|
+|4|-|Y|Y|Y|Y|11|
+|1|-|Y|-|-|-|10|
+|3|-|Y|-|Y|Y|10|
+|5|Y|Y|Y|Y|Y|7|
+|4|Y|Y|-|Y|Y|5|
+|4|-|Y|Y|-|-|2|
+|3|-|-|Y|Y|Y|3|
+|3|-|Y|Y|Y|-|3|
+|2|-|Y|-|Y|-|3|
+|1|-|-|-|Y|-|3|
+|3|Y|-|Y|-|Y|2|
+|2|Y|-|-|-|Y|2|
+|4|Y|Y|Y|-|Y|2|
+|1|Y|-|-|-|-|2|
+|1|-|-|-|-|Y|2|
+|3|Y|-|-|Y|Y|1|
+|3|Y|Y|-|-|Y|1|
+|3|Y|Y|-|Y|-|1|
 
 ## Code:
 
