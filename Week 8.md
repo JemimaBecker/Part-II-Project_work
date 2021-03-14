@@ -17,6 +17,26 @@ using the more stringent adjusted P value <0.05
 |MP:0005591 decreased vasodilation	|	47300	|	3.87078E-05	|	0.048404159	|	9.222972973	|	93.70050153	|	DHFR;SLC4A7;RGS2;EDNRB;PECAM1;IRS2;KCNN4	|	MGI_Mammalian_Phenotype_Level_4_2020	|	DOWN	|![image](https://user-images.githubusercontent.com/67189202/111080128-ec85a400-84f4-11eb-8f46-9c1d9ee50cca.png)
 
 
+Having a look at the genes that appear in more than one category:
+
+|	Gene	|	Occurrences	|
+|-------------	|	-------------	|
+|	BTN1A1	|	2	|
+|	CD83	|	2	|
+|	CD86	|	2	|
+|	CSN1S1	|	2	|
+|	CSN2	|	2	|
+|	CSN3	|	2	|
+|	IL10	|	2	|
+|	LALBA	|	2	|
+|	LAO1	|	2	|
+|	LIF	|	2	|
+|	P2RX4	|	2	|
+|	PLIN2	|	2	|
+|	RGS16	|	3	|
+|	THRSP	|	2	|
+
+
 ```
 library(devtools)
 install_github("wjawaid/enrichR")
