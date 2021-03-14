@@ -19,22 +19,22 @@ using the more stringent adjusted P value <0.05
 
 Having a look at the genes that appear in more than one category:
 
-|	Gene	|	Occurrences	|
-|-------------	|	-------------	|
-|	BTN1A1	|	2	|
-|	CD83	|	2	|
-|	CD86	|	2	|
-|	CSN1S1	|	2	|
-|	CSN2	|	2	|
-|	CSN3	|	2	|
-|	IL10	|	2	|
-|	LALBA	|	2	|
-|	LAO1	|	2	|
-|	LIF	|	2	|
-|	P2RX4	|	2	|
-|	PLIN2	|	2	|
-|	RGS16	|	3	|
-|	THRSP	|	2	|
+|	Gene	|	Occurrences	| Notes | chromosome |
+|-------------	|	-------------	| -------------	| -------------	|
+|	BTN1A1	|	2	| not within 1mp of diff exp lncRNA :(| |
+|	CD83	|	2	| within 1mb. chr13 |13|
+|	CD86	|	2	|not within 1mp of diff exp lncRNA :(||
+|	CSN1S1	|	2	| within 1mb chr 5 |5|
+|	CSN2	|	2	| within 1mb chr5 |5|
+|	CSN3	|	2	| within 1mb chr5 |5|
+|	IL10	|	2	| not within 1mb of lncRNA ||
+|	LALBA	|	2	| within 1mb chr15 |15|
+|	LAO1	|	2	| within 1mb chr4|4|
+|	LIF	|	2	| not within 1mb ||
+|	P2RX4	|	2	| within 1mb chr5 |5|
+|	PLIN2	|	2	| not within 1mb ||
+|	RGS16	|	3	| within 1mb chr1 |1|
+|	THRSP	|	2	| not within 1mb ||
 
 
 ```
