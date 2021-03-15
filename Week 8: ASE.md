@@ -28,6 +28,13 @@ wk8_metaData_luminal <-MouseMammaryGland_Cleaned_MetaData %>% dplyr::filter(Mous
 
 ```
 
+
+> Q: is there a good package for looking at this?
+
+> A: "@jemimabecker there is, and I have tried running it, which is how I know the data is still quite noisy
+> https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
+> Actually DESeq2 gives quite good results with a differential across parent genomes"
+
 tutorials and information to work with
-https://bioconductor.org/packages/release/bioc/manuals/ISoLDE/man/ISoLDE.pdf
-https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
+- https://bioconductor.org/packages/release/bioc/manuals/ISoLDE/man/ISoLDE.pdf
+- https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
