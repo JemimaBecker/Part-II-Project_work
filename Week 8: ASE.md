@@ -27,3 +27,7 @@ wk8_metaData_luminal <-MouseMammaryGland_Cleaned_MetaData %>% dplyr::filter(Mous
 #return data for genes of interest
 
 ```
+
+tutorials and information to work with
+https://bioconductor.org/packages/release/bioc/manuals/ISoLDE/man/ISoLDE.pdf
+https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
