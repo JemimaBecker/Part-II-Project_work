@@ -7,15 +7,23 @@ I ran DESeq2 on the lncRNA genes in each cell type individually to examine:
 - How many genes were differentially expressed
 - What the distribution of expression looked like
 
-| Cell type  |Number of lncRNA genes with padj<0.1 and log2FoldChange > 2|
-| ------------- | ------------- |
-|Luminal Differentiated| 234 |
-|Stromal|132|
-|Adipocyte|66|
-|Luminal Progenitor|62|
-|Basal|40|
-|Endothelial|23|
+| Cell type  |Number of lncRNA genes with padj<0.1 and log2FoldChange > 2| total # diff exp genes |
+| ------------- | ------------- |------------- |
+|Luminal Differentiated| 234 |840|
+|Stromal|132|931|
+|Adipocyte|66|217|
+|Luminal Progenitor|62|144|
+|Basal|40|162|
+|Endothelial|23|172|
 
+although the absolute numbers of differentially expressed genes in stromal is higher than in LD, based on the distributions below, LD will be more itneresting.
+
+|||
+| ------------- | ------------- |
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.08.40.pnghttps://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.11.49.png
+
+
+Looking at distributions of lncRNA DE in differnt cell types
 |||
 | ------------- | ------------- |
 | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/luminal_differentiated_nc.png) | ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/stromal_nc.png) |
