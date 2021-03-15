@@ -20,7 +20,7 @@ although the absolute numbers of differentially expressed genes in stromal is hi
 
 |||
 | ------------- | ------------- |
-|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.08.40.pnghttps://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.11.49.png
+|![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.08.40.png) |![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Screenshot%202021-03-15%20at%2011.11.49.png) |
 
 
 Looking at distributions of lncRNA DE in differnt cell types
