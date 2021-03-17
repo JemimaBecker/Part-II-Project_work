@@ -8,3 +8,10 @@ Csn3	|	protein_coding	|	Diff_protein_blue	|	591.242487413355	|	-4.37337712674572
 Csn1s2a	|	protein_coding	|	Diff_protein_blue	|	5303.9984238663	|	-4.02670404248514	|	0.880398680836952	|	-4.57372793727627	|	4.79121905936901E-06	|	0.000470514425184895	|	87788797	|	87774567	|		|
 Csn2	|	protein_coding	|	Diff_protein_blue	|	3424.49361897561	|	-4.04346349683849	|	0.938985325139102	|	-4.3062052074557	|	1.66079000635949E-05	|	0.00124125681404505	|	87699630	|	87692624	|		|
 Csn1s1	|	protein_coding	|	Diff_protein_blue	|	6945.57455948844	|	-3.66186218910443	|	0.885433407843799	|	-4.13567204113268	|	3.53917345378166E-05	|	0.00227204127487818	|	87682578	|	87666208	|		|![image](https://user-images.githubusercontent.com/67189202/111522473-4040f900-8752-11eb-87f1-4231118381b3.png)
+
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/chr5%20cluster.png)
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Mouse_587808162_88708724%20(1).png)
+
+![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/week%208%20images/Mouse_587808162_88708724.png)
