@@ -1,6 +1,6 @@
 # create manhattan plot function
 ### https://genome.sph.umich.edu/wiki/Code_Sample:_Generating_Manhattan_Plots_in_R
-
+```
 library(lattice)
 manhattan.plot<-function(chr, pos, pvalue, 
                          sig.level=NA, annotate=NULL, ann.default=list(),
@@ -199,9 +199,9 @@ manhattan.plot<-function(chr, pos, pvalue,
          panel.extra=panel.extra, getgenpos=getGenPos, ...
   );
 }
-
+```
 #have a look at my data
-
+```
 annotated_blue <- as.data.frame(annotated_blue)
 manhattan.plot(factor(annotated_blue$chromosome_name, levels=c(1:19, "X"))
                ,annotated_blue$start_position,annotated_blue$pvalue)
@@ -212,3 +212,4 @@ annotated_res2 <- na.omit(annotated_res) #remove the NAs
 manhattan.plot(factor(annotated_res2$chromosome_name, levels=c(1:19, "X","Y"))
                ,annotated_res2$start_position,annotated_res2$pvalue)
 
+```
