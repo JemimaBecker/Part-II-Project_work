@@ -1,0 +1,29 @@
+#H19 in all tissues ENSMUSG00000000031 - what other variants of H19 are there?
+H19_grouped_all <- MouseMammaryGland_Cleaned_edgeR_fpkm_grouped %>% filter(MouseMammaryGland_Cleaned_edgeR_fpkm_grouped$X == "ENSMUSG00000000031")
+H19_grouped_all2 <- t(H19_grouped_all)
+#same formatting issue as above - currently as 1 obs of 61 variables
+H19_grouped_all3 <- Untitled
+#is there significant variance in H19 expression across tissues? - what test here?
+ 
+H19_grouped_all3 <- Untitled
+y <- H19_grouped_all3$Exp
+var(y)
+par(mfrow=c(1,1))
+boxplot(y, ylab="FPKM")
+summary(y)
+hist(y, breaks=20, xlab="H19 FPKM", main="H19 FPKM")
+logY <- log(y) #logtransform
+hist(logY, breaks=20, xlab="log(H19 FPKM)", main="Log transformd H19 FPKM")
+boxplot(logY)
+
+par(mfrow=c(1,1))
+boxplot(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.6)
+H19$logFPKM = log(H19$Exp) #log transform expression
+#boxplot(logFPKM ~ Cell.type, data = H19, cex.axis=0.6)
+boxplot(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.6)
+
+#have a look at distribution - probably only wotht investigating if there is variants/polymodality
+library(DescTools)
+par(mfrow=c(1,2))
+PlotViolin(Exp ~ Cell.type, data=H19, xlab="Cell type", ylab="expression (FPKM)", cex.axis=0.55,main="H19 expression by cell type")
+PlotViolin(logFPKM ~ Cell.type, data=H19, xlab="Cell type", ylab="log expression (FPKM)",main="H19 expression by cell type (log transformed)", cex.axis=0.55)
