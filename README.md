@@ -1,8 +1,6 @@
-# Jemima_Becker
-
 ## Project aims
 Two key parts:
-- Examination of the expression of known imprinted lncRNAs
+- Examination of the behaviour of known imprinted lncRNAs
 - Global hypothesis-free testing to find novel lncRNAs associated with mammary gland development.
 
 ### Materials and methods
