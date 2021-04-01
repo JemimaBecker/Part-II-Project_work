@@ -24,4 +24,14 @@ data: RNAseq, four developmental stages, six cell types, four reciprocal crosses
 narrow down field of study by focussing on luminal differentiated and progenitor cells only
 
 ### Week 4
-- [ ] Identify, per lncRNA, differentially expressed protein-coding genes within e.g. 1Mb up/downstream
+- [x] Identify, per lncRNA, differentially expressed protein-coding genes within e.g. 1Mb up/downstream
+
+### Week 5
+- [x] check with cell type shows the most significant difference in lncRNA
+- [x] Identify the most promising cell type to work on
+- [x] identify the most interesting/dynamic/hihgly expressed lncRNA in that cell type
+
+### Week6 
+- [x] Check the conservation of lncRNAs that you identified last week
+- [x] check the proxomity of protein coding genes to the lncRNA that you selected
+- [x] start working with allele specific expression
