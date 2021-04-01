@@ -1,7 +1,6 @@
-# Week 8: Allele specific expression
+# Allele specific expression
 
-> @jemimabecker also, if you create a column with just sample names (remove the .g1 or .g2) you can filter to the same set as the main expression table. The selection of "clean" samples was done across both datasets. (but works better for the normal expression due to much higher depth). The ASE read counts are MUCH lower, as only a small proportion of reads contain informative SNPs for parental assignment.
-
+Code kindly adapted from Martin Limback-Stokin
 ```
 load.Rdata(file="/home/rsh46/MammaryGlandData/ASE/MouseMammaryGland_ASE_NormalisedReadCounts_RAW.Rdata","ASE")
 ensembl    <- useEnsembl(biomart="ensembl", dataset="mmusculus_gene_ensembl")
@@ -23,17 +22,6 @@ luminal_lncRNAs_ASE <- lncRNAs_ASE %>% dplyr::select(Row.names,wk8_meta_data_lum
 wk8_metaData_luminal <-MouseMammaryGland_Cleaned_MetaData %>% dplyr::filter(MouseMammaryGland_Cleaned_MetaData$
                                                     Cell.type =="Luminal Differentiated")
 ```
-
-> Q: is there a good package for looking at this?
-
-> A: "@jemimabecker there is, and I have tried running it, which is how I know the data is still quite noisy
-> https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
-> Actually DESeq2 gives quite good results with a differential across parent genomes"
-
-tutorials and information to work with
-- https://bioconductor.org/packages/release/bioc/manuals/ISoLDE/man/ISoLDE.pdf
-- https://www.bioconductor.org/packages/release/bioc/html/ISoLDE.html
-
 ## Allelic expression & Visualisation
 ```
 library(edgeR)
