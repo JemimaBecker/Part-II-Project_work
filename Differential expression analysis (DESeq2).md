@@ -18,23 +18,23 @@ ensEMBL2id <- getBM(attributes=c('ensembl_gene_id', 'external_gene_name', 'descr
 ```
 filter to biotypes of interest 
 ```
-> raw_noncoding <- annotated_raw %>% dplyr::filter(annotated_raw$gene_biotype == 
->                                                    "3prime_overlapping_ncRNA" |
->                                                    gene_biotype == "antisense" |
->                                                    gene_biotype == "bidirectional_promoter_lncRNA" |
->                                                    gene_biotype == "lincRNA" |
->                                                    gene_biotype == "lncRNA" |
->                                                    gene_biotype == "macro_lncRNA" |
->                                                    gene_biotype ==  "processed_transcript")
-> 
-> raw_noncoding <- raw_noncoding[,c(1:453)] 
+ raw_noncoding <- annotated_raw %>% dplyr::filter(annotated_raw$gene_biotype == 
+                                                    "3prime_overlapping_ncRNA" |
+                                                    gene_biotype == "antisense" |
+                                                    gene_biotype == "bidirectional_promoter_lncRNA" |
+                                                    gene_biotype == "lincRNA" |
+                                                    gene_biotype == "lncRNA" |
+                                                    gene_biotype == "macro_lncRNA" |
+                                                    gene_biotype ==  "processed_transcript")
+ 
+ raw_noncoding <- raw_noncoding[,c(1:453)] 
 ```
 filter to cell type of interest
 ```
-> sampleinfo <- MouseMammaryGland_Cleaned_MetaData
-> sampleinfo_luminal <-sampleinfo %>% dplyr::filter(sampleinfo$
->                                                     Cell.type =="Luminal Differentiated")
-> raw_noncoding2 <- raw_noncoding %>% dplyr::select(Row.names, sampleinfo_luminal$X)
+ sampleinfo <- MouseMammaryGland_Cleaned_MetaData
+ sampleinfo_luminal <-sampleinfo %>% dplyr::filter(sampleinfo$
+                                                     Cell.type =="Luminal Differentiated")
+ raw_noncoding2 <- raw_noncoding %>% dplyr::select(Row.names, sampleinfo_luminal$X)
 ```
 ### 2: Running deseq2
 
@@ -98,13 +98,13 @@ see separate file for code on generation of manhattan plot function
 
 this shows the distribution of variation across the genome
 ```
-> resdf <- read.csv("/data/homes/jb2220/resdf.csv")
-> rownames(resdf) <- resdf[,1]
-> annotated_resdf  <- merge(resdf, ensEMBL2id, by=0)
-> annotated_resdf <- as.data.frame(annotated_resdf)
-> annotated_resdf2 <- na.omit(annotated_resdf) #remove the NAs
-> manhattan.plot(factor(annotated_resdf2$chromosome_name, levels=c(1:19, "X","Y")),main="Differential expression of noncoding RNAs in luminal differentiated > cells",
->                annotated_resdf2$start_position,annotated_resdf2$pvalue,sig.level=5e-3)
+ resdf <- read.csv("/data/homes/jb2220/resdf.csv")
+ rownames(resdf) <- resdf[,1]
+ annotated_resdf  <- merge(resdf, ensEMBL2id, by=0)
+ annotated_resdf <- as.data.frame(annotated_resdf)
+ annotated_resdf2 <- na.omit(annotated_resdf) #remove the NAs
+ manhattan.plot(factor(annotated_resdf2$chromosome_name, levels=c(1:19, "X","Y")),main="Differential expression of noncoding RNAs in luminal differentiated > cells",
+                annotated_resdf2$start_position,annotated_resdf2$pvalue,sig.level=5e-3)
 ```
 ![](https://github.com/AFS-Part-II-Projects/Jemima_Becker/blob/main/images/Screenshot%202021-02-11%20at%2010.17.25.png)
 
