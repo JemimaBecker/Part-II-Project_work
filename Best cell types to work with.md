@@ -1,4 +1,4 @@
-# Week 5: Identifying the best cell type and candidate genes
+# Identifying the best cell type and candidate genes
 
 ## DESeq2
 
